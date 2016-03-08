@@ -10,7 +10,7 @@
 #ifdef SIS
 #include "sis.h"
 
-extern void read_error();
+extern void read_error (char *, ...);
 extern int read_lineno;
 extern char *read_filename;
 
