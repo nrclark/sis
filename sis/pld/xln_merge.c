@@ -284,7 +284,35 @@ array_t	        *match1_array, *match2_array;
 
 }
 
-
+static sm_row *
+xln_merge_find_neighbor_of_row1_with_minimum_neighbors(row1, coeff)
+  sm_row *row1;
+  sm_matrix *coeff;
+{
+  sm_row *row, *row2;
+  sm_element *p;
+  int min_neighbr;
+  
+  min_neighbr = MAXINT;
+  row2 = NIL (sm_row);
+
+  /* each column has two elements */
+  /*------------------------------*/
+  sm_foreach_row_element(row1, p) {
+      if (p->prev_row == NIL (sm_element)) {
+          row = sm_get_row(coeff, (p->next_row)->row_num);
+      } else {
+          row = sm_get_row(coeff, (p->prev_row)->row_num);
+      }
+      if (row->length < min_neighbr) {
+          min_neighbr = row->length;
+          row2 = row;
+      }
+  }
+  assert (row2);
+  return row2;
+}
+
 /*----------------------------------------------------------------------------------------------------
   An alternate to lindo option. Uses greedy merging. A node with minimum mergeable nodes is picked
   first. It is combined with a neighbor node that has minimum number of neighbors. The pairs of
@@ -296,7 +324,6 @@ xln_merge_nodes_without_lindo(coeff, cand_node_array, match1_array, match2_array
 { 
   node_t *n1, *n2;
   sm_row *row1, *row2;
-  static sm_row *xln_merge_find_neighbor_of_row1_with_minimum_neighbors();
 
   while (TRUE) {
       row1 = sm_shortest_row(coeff);
@@ -326,35 +353,6 @@ sm_shortest_row(A)
       }
   }
   return short_row;
-}
-
-static sm_row *
-xln_merge_find_neighbor_of_row1_with_minimum_neighbors(row1, coeff)
-  sm_row *row1;
-  sm_matrix *coeff;
-{
-  sm_row *row, *row2;
-  sm_element *p;
-  int min_neighbr;
-  
-  min_neighbr = MAXINT;
-  row2 = NIL (sm_row);
-
-  /* each column has two elements */
-  /*------------------------------*/
-  sm_foreach_row_element(row1, p) {
-      if (p->prev_row == NIL (sm_element)) {
-          row = sm_get_row(coeff, (p->next_row)->row_num);
-      } else {
-          row = sm_get_row(coeff, (p->prev_row)->row_num);
-      }
-      if (row->length < min_neighbr) {
-          min_neighbr = row->length;
-          row2 = row;
-      }
-  }
-  assert (row2);
-  return row2;
 }
 
 xln_merge_update_neighbor_info(coeff, row1, row2)
