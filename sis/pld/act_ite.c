@@ -121,6 +121,24 @@ node_t *fanin;
     return p_vertex;
 }
 
+static int
+compare(obj1, obj2)
+char *obj1, *obj2;
+{
+    ite_vertex *ite1 = *(ite_vertex **)obj1;
+    ite_vertex *ite2 = *(ite_vertex **)obj2;
+    int value;
+    
+    if((ite1->index_size == 0 ) || (ite2->index_size == 0)) {
+	(void)fprintf(misout, "Hey u DOLT ite of size \n");
+    }
+    if(ite1->index_size == ite2->index_size) value = 0;
+    if(ite1->index_size > ite2->index_size) value = 1;
+    if(ite1->index_size < ite2->index_size) value = -1;
+    return value;
+}
+
+
 /* from a set of sub-covers in array, and the corresponding ite_s in array_b,
    and the minimum column cover variables in cover, generates an ite for the 
    original function. */
@@ -132,7 +150,6 @@ array_t *array;
 sm_row *cover;
 network_t *network;
 {
-    static int compare();
     int  i;
     ite_vertex *vertex;
     sm_element *p;
@@ -218,23 +235,6 @@ ite_vertex *ite_IF, *ite_THEN, *ite_ELSE;
     ite->ELSE = ite_ELSE;
     ite->THEN = ite_THEN;
     return ite;
-}
-
-static int
-compare(obj1, obj2)
-char *obj1, *obj2;
-{
-    ite_vertex *ite1 = *(ite_vertex **)obj1;
-    ite_vertex *ite2 = *(ite_vertex **)obj2;
-    int value;
-    
-    if((ite1->index_size == 0 ) || (ite2->index_size == 0)) {
-	(void)fprintf(misout, "Hey u DOLT ite of size \n");
-    }
-    if(ite1->index_size == ite2->index_size) value = 0;
-    if(ite1->index_size > ite2->index_size) value = 1;
-    if(ite1->index_size < ite2->index_size) value = -1;
-    return value;
 }
 
 /*------------------------------------------------------------

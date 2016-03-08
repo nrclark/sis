@@ -12,6 +12,23 @@
 
 static void join();
 
+    static int
+compare(obj1, obj2)
+char *obj1, *obj2;
+{
+    act_t *act1 = *(act_t **)obj1;
+    act_t *act2 = *(act_t **)obj2;
+    int value;
+    
+    if((act1->index_size == 0 ) || (act2->index_size == 0)) {
+	(void)fprintf(sisout, "Hey u DOLT act of size \n");
+    }
+    if(act1->index_size == act2->index_size) value = 0;
+    if(act1->index_size > act2->index_size) value = 1;
+    if(act1->index_size < act2->index_size) value = -1;
+    return value;
+}
+
 /* Initialize the ACT*/
 act_t *
 my_init_act()
@@ -34,7 +51,6 @@ my_init_act()
     /* vertex->parent = NULL; */
     return vertex;
 }
-
 
 /* Construct bdd for a cube ie a bdd which is the and of its variables*/
 act_t *
@@ -148,7 +164,6 @@ array_t *array_b;
 array_t *array;
 sm_row *cover;
 {
-    static int compare();
     int  i;
     act_t *up_vertex, *down_vertex, *vertex;
     sm_element *p;
@@ -244,21 +259,3 @@ act_t *vertex;
 	(void)fprintf(sisout, "END- %d\n", vertex->value);
     }
 }
-
-static int
-compare(obj1, obj2)
-char *obj1, *obj2;
-{
-    act_t *act1 = *(act_t **)obj1;
-    act_t *act2 = *(act_t **)obj2;
-    int value;
-    
-    if((act1->index_size == 0 ) || (act2->index_size == 0)) {
-	(void)fprintf(sisout, "Hey u DOLT act of size \n");
-    }
-    if(act1->index_size == act2->index_size) value = 0;
-    if(act1->index_size > act2->index_size) value = 1;
-    if(act1->index_size < act2->index_size) value = -1;
-    return value;
-}
-
