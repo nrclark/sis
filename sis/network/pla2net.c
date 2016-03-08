@@ -110,7 +110,7 @@ pPLA PLA;
 
     return network;
 }
-
+
 network_t *
 pla_to_network_single(PLA)
 pPLA PLA;
@@ -204,7 +204,7 @@ FILE *fp;
 
     return PLA;
 }
-
+
 network_t *
 pla_to_dcnetwork_single(PLA)
 pPLA PLA;

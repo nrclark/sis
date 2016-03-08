@@ -64,7 +64,7 @@ typedef struct gen_desc {	/* Generator Descriptor 	*/
  */
 
 
-
+
 /*
  * List Creation and Deletion
  */
@@ -109,7 +109,7 @@ void (*delFunc)();		/* Routine to release user data */
     free((lsGeneric) realList);
     return(LS_OK);
 }
-
+
 
 /*
  * Copying lists
@@ -149,7 +149,7 @@ lsGeneric (*copyFunc)();	/* Routine to copy user data */
     lsFinish(gen);
     return newList;
 }
-
+
 
 /*
  * Adding New Elements to the Beginning and End of a List
@@ -214,7 +214,7 @@ lsHandle *itemHandle;		/* Handle to data (returned) */
     if (itemHandle) *itemHandle = (lsHandle) newElem;
     return(LS_OK);
 }
-
+
 /*
  * Retrieving the first and last items of a list
  */
@@ -269,7 +269,7 @@ lsHandle *itemHandle;	/* Handle to data (returned) */
     }
 }
 
-
+
 
 /* Length of a list */
 
@@ -285,7 +285,7 @@ lsList list;			/* List to get the length of */
     return(realList->length);
 }
 
-
+
 
 /*
  * Deleting first and last items of a list
@@ -360,7 +360,7 @@ lsGeneric *data;			/* Last item (returned)     */
     return LS_OK;
 }
 
-
+
 /*
  * List Generation Routines
  *
@@ -683,7 +683,7 @@ lsGen generator;		/* Generator handle */
     return(LS_OK);
 }
 
-
+
 
 /*
  * Functional list generation
@@ -732,7 +732,7 @@ lsGeneric arg;			/* User provided data       */
     return lsGenForm(userFunc, arg, lsEnd(list), lsPrev, lsDelAfter);
 }
 
-
+
 
 static lsStatus lsGenForm(userFunc, arg, gen, gen_func, del_func)
 lsStatus (*userFunc)();		/* User provided function         */
@@ -765,7 +765,7 @@ lsStatus (*del_func)();		/* Deletion function to use       */
     (void) lsFinish(gen);
     return LS_OK;
 }
-
+
 
 lsList lsQueryHandle(itemHandle)
 lsHandle itemHandle;		/* Handle of an item  */
@@ -812,7 +812,7 @@ lsGeneric *userData;		/* Returned data     */
     return lsDelAfter((lsGen) &gen, userData);
 }
 
-
+
 /* List sorting support */
 #define TYPE		lsElem
 #define SORT		lsSortItems
@@ -850,7 +850,7 @@ int (*compare)();		/* Comparison function */
     return LS_OK;
 }
 
-
+
 
 lsStatus lsUniq(list, compare, delFunc)
 lsList list;			/* List to remove duplicates from */

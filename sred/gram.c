@@ -443,7 +443,7 @@ int yydebug;
 #ifndef YYMAXDEPTH
 # define YYMAXDEPTH 10000
 #endif
-
+
 #ifdef YYERROR_VERBOSE
 
 # ifndef yystrlen
@@ -495,7 +495,7 @@ yystpcpy (yydest, yysrc)
 #  endif
 # endif
 #endif
-
+
 #line 315 "/usr/share/bison/bison.simple"
 
 
@@ -959,7 +959,7 @@ case 27:
 
 #line 705 "/usr/share/bison/bison.simple"
 
-
+
   yyvsp -= yylen;
   yyssp -= yylen;
 #if YYLSP_NEEDED

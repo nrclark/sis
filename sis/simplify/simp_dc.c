@@ -67,7 +67,7 @@ node_t *f;
     st_free_table(table);
     return DC;
 }
-
+
 static st_table *
 simp_table(f)
 node_t *f;
@@ -130,7 +130,7 @@ node_t *f;
 
     return nodefanout_vec;
 }
-
+
 static void
 nodefanout_print(vec)
 array_t *vec;
@@ -163,7 +163,7 @@ st_table *table;
     }
     (void) fprintf(sisout, "\n\n");
 }
-
+
 node_t *
 simp_fanout_dc(f)
 node_t *f;
@@ -219,7 +219,7 @@ int il, iol;
     node_free(fanoutDC);
     return DC;
 }
-
+
 node_t *
 simp_tfanin_dc(f, il, ol)
 node_t *f;
@@ -277,7 +277,7 @@ int il, ol;
     return DC;
 }
 
-
+
 node_t *
 simp_all_dc(f)
 node_t *f;
@@ -333,7 +333,7 @@ node_t *f;
     array_free(dc_list);
     return DC;
 }
-
+
 static array_t *
 get_sub_list(f)
 node_t *f;
@@ -396,7 +396,7 @@ node_t *f;
     array_free(nlist);
     return(sup_list);
 }
-
+
 node_t *
 simp_level_dc(f, level_table)
 node_t *f;

@@ -91,7 +91,7 @@ static latch_time_t **lib_get_latch_time_info();
 static void lib_register_type();
 static void lib_save_clock_info();
 #endif /* SIS */
-
+
 int
 lib_read_blif(fp, filename, add_inverter, nand_flag, library_p)
 FILE *fp;
@@ -183,7 +183,7 @@ library_t **library_p;
 #endif /* SIS */
   return 1;
 }
-
+
 static int
 process_pattern(library, network)
 library_t *library;
@@ -239,7 +239,7 @@ network_t *network;
     }
     return 1;
 }
-
+
 static int match_flag;
 
 
@@ -333,7 +333,7 @@ network_t *network;
     LS_ASSERT(lsNewEnd(library->patterns, (char *) prim, LS_NH));
     return prim;
 }
-
+
 static lib_gate_t *
 find_gate(library, network)
 library_t *library;
@@ -425,7 +425,7 @@ network_t *network;
   }
   return gate;
 }
-
+
 /*
  *  compare two networks for equality (by name) of all outputs
  *  the networks should already be collapsed.
@@ -467,7 +467,7 @@ network_t *net1, *net2;
   }
   return 0;
 }
-
+
 static lib_class_t *
 find_class(library, network)
 library_t *library;
@@ -516,7 +516,7 @@ lib_gate_t *gate;
     gate->class_p = class_p;
     return class_p;
 }
-
+
 static void
 derive_dual_classes(library)
 library_t *library;
@@ -561,7 +561,7 @@ network_t *network;
 
     return new_network;
 }
-
+
 static network_t *
 lib_wire()
 {

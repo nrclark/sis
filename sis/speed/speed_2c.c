@@ -39,7 +39,7 @@ extern node_t *fx_2c_kernel_best();        /* Part of gen_2c_kernel.c */
 static int sp_eval_2c_kernel();
 
 int twocube_timeout_occured = 0; /* Flag describing whether timeout has occured */
-
+
 int 
 speed_2c_decomp(network, node, speed_param, attempt_no)
 network_t *network;

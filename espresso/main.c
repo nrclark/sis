@@ -194,7 +194,7 @@ char *argv[];
 	if (PLA != NIL(PLA_t)) PLA_summary(PLA);
 	if (PLA1 != NIL(PLA_t)) PLA_summary(PLA1);
     }
-
+
 /*
  *  Now a case-statement to decide what to do
  */
@@ -648,7 +648,7 @@ usage()
     printf("                so_espresso: 0=minimize, 1=exact\n");
     printf("                so_both: 0=minimize, 1=exact\n");
 }
-
+
 /*
  *  Hack for backward compatibility (ACK! )
  */

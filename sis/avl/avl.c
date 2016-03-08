@@ -59,7 +59,7 @@ static void do_rebalance();
 static rotate_left();
 static rotate_right();
 static int do_check_tree();
-
+
 avl_tree *
 avl_init_table(compar)
 int (*compar)();
@@ -95,7 +95,7 @@ char **value_p;
     }
     return 0;
 }
-
+
 avl_first(tree, key_p, value_p)
 avl_tree *tree;
 char **key_p;
@@ -134,7 +134,7 @@ char **value_p;
 	return 1;
     }
 }
-
+
 avl_insert(tree, key, value)
 avl_tree *tree;
 char *key;
@@ -199,7 +199,7 @@ char ***slot_p;
     if (slot_p != 0) *slot_p = &node->value;
     return 0;			/* not already in tree */
 }
-
+
 avl_delete(tree, key_p, value_p)
 avl_tree *tree;
 char **key_p;
@@ -244,7 +244,7 @@ delete_item:
     tree->modified = 1;
     return 1;
 }
-
+
 static void 
 avl_record_gen_forward(node, gen)
 avl_node *node;
@@ -321,7 +321,7 @@ avl_generator *gen;
     FREE(gen->nodelist);
     FREE(gen);
 }
-
+
 static avl_node *
 find_rightmost(node_p)
 register avl_node **node_p;
@@ -369,7 +369,7 @@ register int stack_n;
 	}
     }
 }
-
+
 static 
 rotate_left(node_p)
 register avl_node **node_p;
@@ -416,7 +416,7 @@ avl_node **node_p;
     compute_height(old_root);
     compute_height(new_root);
 }
-
+
 static void 
 avl_walk_forward(node, func)
 avl_node *node;
@@ -490,7 +490,7 @@ avl_tree *tree;
 {
     return tree->num_entries;
 }
-
+
 static avl_node *
 new_node(key, value)
 char *key;
@@ -513,7 +513,7 @@ char *x, *y;
 {
     return (int) x - (int) y;
 }
-
+
 int
 avl_check_tree(tree)
 avl_tree *tree;

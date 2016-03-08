@@ -79,7 +79,7 @@ prl_removedep_t *options;
     network_sweep(network);
     return 0;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -112,7 +112,7 @@ array_t *nodevec;
     }
     return 0;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -157,7 +157,7 @@ node_t *pi;
     array_free(nodevec);
     return pi_tfo;
 }
-
+
 
 static array_t *GetRootFanouts      ARGS((node_t *, st_table *));
 static node_t  *ProcessInternalNode ARGS((node_t *, array_t *));
@@ -259,7 +259,7 @@ st_table *roots;
     }
     return root_fanouts;
 }
-
+
 
 static void PatchFanin ARGS((array_t *, node_t *, node_t *));
 

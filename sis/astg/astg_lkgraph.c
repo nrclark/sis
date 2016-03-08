@@ -68,7 +68,7 @@ astg_graph *stg;
     }
     printf("\n");
 }
-
+
 /* ------------------- Connected Components of Lock Graph ------------------- *\
 
    Uses a DFS to find the connected components of the lock graph.  Since the
@@ -118,7 +118,7 @@ void *fdata;
 
     return n_comp;
 }
-
+
 /* ----------------------- Shortest Path Algorithm -------------------------- *\
 
    astg_lock_graph_shortest_path: finding shortest path from single source.
@@ -192,7 +192,7 @@ astg_signal *source;	/*u Signal to start with in lock graph.		*/
 
     lsDestroy (src_pqueue,NULL);
 }
-
+
 /* ----------------------------- Misc. Stuff -------------------------------- */
 
 static astg_bool sandwich (t1,t,t2)
@@ -349,7 +349,7 @@ lc_rec *lc_info;
     return n_comp;
 }
 
-/* ----------------------- Rectify Unique State Coding ------------------- */
+/* ----------------------- Rectify Unique State Coding ------------------- */
 
 static astg_bool can_lock_trans (t1,t2)
 astg_trans *t1, *t2;

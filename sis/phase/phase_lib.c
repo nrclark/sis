@@ -100,7 +100,7 @@ row_data_t *row_data;
 	}
     }
 }
-
+
 void
 phase_node_invert(np)
 node_t *np;

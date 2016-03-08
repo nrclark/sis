@@ -227,7 +227,7 @@ st_table *leaves; /* not used here, for debugging purposes */
   return(node);
 }
 
-
+
 
 /*
  * Finds groups of functions whose support is completely disjoint from the

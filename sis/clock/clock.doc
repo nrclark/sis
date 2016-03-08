@@ -228,7 +228,7 @@ clock_param_t parameter;
     the nominal time into an absolute value. If the return value is 
     negative, there is an error (possibly the clock cycle duration 
     has not been set).
-
+
 The clock package also provides a means of identifying the delay on the
 control input of latches. Currently only one routine is provided. In
 future this set of routines will be extented to provide more detailed

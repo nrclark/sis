@@ -428,7 +428,7 @@ char *y;
 {
     return ST_NUMCMP(x, y);
 }
-
+
 st_generator *
 st_init_gen(table)
 st_table *table;

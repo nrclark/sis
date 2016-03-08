@@ -67,7 +67,7 @@ int *cols_visited;
     }
     return 0;
 }
-
+
 static sm_row *
 copy_row(A, prow)
 register sm_matrix *A;
@@ -109,7 +109,7 @@ register sm_matrix **R;
 	sm_put(pcol, sm_get(char *, sm_get_col(A, pcol->col_num)));
     }
 }
-
+
 int
 dec_block_partition(A, L, R)
 sm_matrix *A;

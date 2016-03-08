@@ -86,7 +86,7 @@ char *command;
     (void) fprintf(siserr, "    -f exact\tExact filter (default)\n");
     (void) fprintf(siserr, "    -f disj_sup\tDisjoint support filter\n");
 }
-
+
 int
 com_simplify(network, argc, argv)
 network_t **network;
@@ -176,7 +176,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 int
 com_simp(network, argc, argv)
 network_t **network;
@@ -323,7 +323,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 static bool
 get_cone_levels(name, par1, par2)
 char *name;
@@ -387,7 +387,7 @@ network_t *network;
    return(node_level_table);
 }
 
-
+
 int
 com_full_simplify(network, argc, argv)
 network_t **network;

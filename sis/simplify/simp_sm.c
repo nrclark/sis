@@ -102,7 +102,7 @@ node_t *f, *dc;
     (void) st_free_table(table);
     return M;
 }
-
+
 /* return the column number where a variable occurs in the matrix. return the
  * next unused column number if the variable is absent */
 static int
@@ -165,7 +165,7 @@ sm_matrix *M;
     (void) fprintf(sisout, "\n");
     }
 }
-
+
 /*
  * map the dont care part of a sparse-matrix representation of a Mtion 
  * and its dont care back into a dont care node

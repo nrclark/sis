@@ -265,7 +265,7 @@ register sm_element *p;
 
     sm_element_free(p);
 }
-
+
 void 
 sm_delrow(A, i)
 sm_matrix *A;
@@ -299,7 +299,7 @@ int i;
 	sm_row_free(prow);
     }
 }
-
+
 void 
 sm_delcol(A, i)
 sm_matrix *A;
@@ -333,7 +333,7 @@ int i;
 	sm_col_free(pcol);
     }
 }
-
+
 void
 sm_copy_row(dest, dest_row, prow)
 register sm_matrix *dest;
@@ -398,7 +398,7 @@ sm_matrix *A;
     }
     return large_col;
 }
-
+
 int
 sm_num_elements(A)
 sm_matrix *A;
@@ -412,7 +412,7 @@ sm_matrix *A;
     }
     return num;
 }
-
+
 int 
 sm_read(fp, A)
 FILE *fp;
@@ -481,7 +481,7 @@ sm_matrix *A;
 	}
     }
 }
-
+
 void 
 sm_print(fp, A)
 FILE *fp;
@@ -544,7 +544,7 @@ int max;
 	sm_print(fp, A);
     }
 }
-
+
 void
 sm_cleanup()
 {

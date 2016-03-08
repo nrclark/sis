@@ -52,7 +52,7 @@ prl_options_t *options;
   Prl_SeqInfoFree(seq_info, options);
   Prl_RemoveDcNetwork(network);
 }
-
+
 
  /* INTERNAL INTERFACE */
 
@@ -233,7 +233,7 @@ net_info_t *net_info;
     }
     FREE(stats);
 }
-
+
 /* 
  * Work on an equivalence class basis.
  * First: compute the costs: based on depth, then on amount of logic that can be removed. 

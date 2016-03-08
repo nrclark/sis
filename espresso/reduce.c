@@ -93,7 +93,7 @@ IN pcover D;
     /* Delete any cubes of F which reduced to the empty cube */
     return sf_inactive(F);
 }
-
+
 /* reduce_cube -- find the maximal reduction of a cube */
 pcube reduce_cube(FD, p)
 IN pcube *FD, p;
@@ -173,7 +173,7 @@ register pcube result, p;
     }
     return result;
 }
-
+
 /*
  *   sccc_special_cases -- check the special cases for sccc
  */

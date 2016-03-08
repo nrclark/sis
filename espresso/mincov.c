@@ -102,7 +102,7 @@ int debug_level;	/* how deep in the recursion to provide info */
     solution_free(best);
     return sol;
 }
-
+
 /*
  *  Find the best cover for 'A' (given that 'select' already selected);
  *
@@ -263,7 +263,7 @@ stats_t *stats;
 
     return best;
 }
-
+
 static int 
 select_column(A, weight, indep)
 sm_matrix *A;
@@ -320,7 +320,7 @@ solution_t *indep;
     sm_row_free(indep_cols);
     return best_col;
 }
-
+
 static void 
 select_essential(A, select, weight, bound)
 sm_matrix *A;
@@ -361,7 +361,7 @@ int bound;			/* must beat this solution */
 
     } while (delcols > 0 || delrows > 0 || essen_count > 0);
 }
-
+
 static int 
 verify_cover(A, cover)
 sm_matrix *A;

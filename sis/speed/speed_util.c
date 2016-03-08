@@ -83,7 +83,7 @@ double thresh;
     }
     node_replace(node, new);
 }
-
+
 /*
  * name_to_node -- returns the pointer to the fanin
  * of a node with a given name .
@@ -223,7 +223,7 @@ char **p1, **p2;
     return (level1 - level2);
 }
 
-
+
 st_table *
 speed_levelize_crit(network, speed_param, max_levelp)
 network_t *network;
@@ -330,7 +330,7 @@ double *area;
     }
     network_free(new_net);
 }
-
+
 void
 set_speed_thresh(network, speed_param)
 network_t *network;
@@ -420,7 +420,7 @@ node_t *node;
 
     array_free(nodevec);
 }
-
+
 /* For the purposes of buffering we may need buffers from the library */
 lib_gate_t *
 sp_lib_get_buffer(lib)

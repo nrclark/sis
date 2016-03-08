@@ -111,7 +111,7 @@ int **vector;
     } while (! nonincreasing);
     return 1;
 }
-
+
 partition_t *
 gl_init_gen_partition(s)
 int s;
@@ -191,7 +191,7 @@ int *n;
     }
     return 0;
 }
-
+
 #ifdef TEST
 #include <stdio.h>
 

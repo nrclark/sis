@@ -79,7 +79,7 @@ IN int output_type;
 	}
     }
 }
-
+
 void fpr_header(fp, PLA, output_type)
 FILE *fp;
 pPLA PLA;
@@ -150,7 +150,7 @@ int output_type;
 	(void) fprintf(fp, "\n");
     }
 }
-
+
 void pls_output(PLA)
 IN pPLA PLA;
 {
@@ -502,7 +502,7 @@ char *out_string;
 
     putc('\n', fp);
 }
-
+
 output_symbolic_constraints(fp, PLA, output_symbolic)
 FILE *fp;
 pPLA PLA;

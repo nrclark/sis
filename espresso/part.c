@@ -80,7 +80,7 @@ int *cols_visited;
     }
     return 0;
 }
-
+
 int
 sm_block_partition(A, L, R)
 sm_matrix *A;

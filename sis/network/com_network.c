@@ -58,7 +58,7 @@ char **argv;
     }
     return 0;
 }
-
+
 /* ARGSUSED */
 static int
 com_sweep(network, argc, argv)
@@ -97,7 +97,7 @@ char **argv;
     }
     return 0;
 }
-
+
 static int
 com_check(network, argc, argv)
 network_t **network;
@@ -138,7 +138,7 @@ usage:
     (void) fprintf(miserr, "usage: _check [-v]\n");
     return 1;
 }
-
+
 /* ARGSUSED */
 static int
 com_verify(network, argc, argv)
@@ -222,7 +222,7 @@ usage:
    (void) fprintf(miserr, "    -m \tbdd\tVerifying using bdd\n");
    return 1;
 }
-
+
 init_network()
 {
     com_add_command("_check", com_check, 0);

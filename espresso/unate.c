@@ -57,7 +57,7 @@ pcube *T;
 
     return A;
 }
-
+
 pcover map_unate_to_cover(A)
 pset_family A;
 {
@@ -106,7 +106,7 @@ pset_family A;
     FREE(unate);
     return B;
 }
-
+
 /*
  *  unate_compl
  */
@@ -219,7 +219,7 @@ pset_family A;			/* disposes of A */
 
     return Abar;
 }
-
+
 pset_family exact_minimum_cover(T)
 IN pset_family T;
 {
@@ -290,7 +290,7 @@ IN pset_family T;
     sf_free(T);         /* this is the copy of T we made ... */
     return temp;
 }
-
+
 /*
  *  unate_intersect -- intersect two unate covers
  *
@@ -359,7 +359,7 @@ bool largest_only;
 
     return Tsave;
 }
-
+
 /*
  *  abs_covered -- after selecting a new column for the selected set,
  *  create a new matrix which is only those rows which are still uncovered

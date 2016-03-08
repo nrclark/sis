@@ -105,7 +105,7 @@ astg_bool create;
     }
     return t;
 }
-
+
 /* --------------------- Simple input parsing utilities --------------------- */
 
 void io_open (source,stream,s)
@@ -381,7 +381,7 @@ char *token;
     }
     return io_status(source);
 }
-
+
 /* ------------------------- Parser for STG --------------------------------- */
 
 static int is_place_name (stg,vname)
@@ -824,7 +824,7 @@ char *fname;		/*i name of stream to use in messages	*/
 
     return stg;
 }
-
+
 /* ---------------------------- Write STG ----------------------------------- */
 
 void astg_write_marking (stg,fout)

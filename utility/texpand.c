@@ -206,7 +206,7 @@ char *fname;
     return result[count];
 }
 
-
+
 
 static int comp(a, b)
 char *a, *b;

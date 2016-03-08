@@ -126,7 +126,7 @@ Miscellaneous:
   bdd_set_gc_mode()
   bdd_dynamic_reordering()
 
-
+
 
 BDD Manager Allocation And Destruction ----------------------------------------
 
@@ -213,7 +213,7 @@ bdd_mgr_init *mgr_init;
     manager = bdd_start_with_params(SOME_NUMBER, &mgr_init); /* create mgr */
 
 
-
+
 
 BDD Variable Allocation -------------------------------------------------------
 
@@ -270,7 +270,7 @@ bdd_variableId variable_ID;	       /* unsigned int */
       .
       .
     bdd_end(manager);
-
+
 
 BDD Formula Management --------------------------------------------------------
 
@@ -294,7 +294,7 @@ bdd_t *bdd;
     result = bdd_or(f, temp, 1, 1);
     bdd_free(temp);
 
-
+
 
 Operations on BDD Formulas ----------------------------------------------------
 
@@ -511,7 +511,7 @@ bdd_manager *manager;
 
     Returns the BDD formula pointing to the constant function 0 of the manager
     (a complemented pointer to the constant function 1).
-
+
 
 Queries about BDD Formulas ----------------------------------------------------
 
@@ -550,7 +550,7 @@ boolean g_phase;
     value of (f => g').  (While this can be done using bdd_or and then checking
     if this result is a constant value, using bdd_leq is generally faster and
     uses less memory.  Note that bdd_leq uses the ITE_const cache.)
-
+
 
 Statistics and Other Queries --------------------------------------------------
 
@@ -794,7 +794,7 @@ bdd_t *f;
     ID of a node never changes.  The result is undefined if `f' refers to one
     of the constant functions.
 
-
+
 
 Traversal of BDD Formulas -----------------------------------------------------
 
@@ -845,7 +845,7 @@ bdd_node *node;	  /* return */
     garbage collector off before you start the iteration, and back on after you
     have completed the iteration.
 
-
+
 
 Miscellaneous -----------------------------------------------------------------
 

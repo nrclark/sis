@@ -86,7 +86,7 @@ astg_bool modify;
     dbg (1,msg("%s %d redundant constraints\n",modify?"Deleted":"Found",n_redundant));
     return n_redundant;
 }
-
+
 /* -------------------------- Calculate Worst Delay --------------------- */
 
 typedef struct cycle_info {

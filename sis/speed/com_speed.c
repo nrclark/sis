@@ -317,7 +317,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 /*
  * Given the list of nodes, the routine will collapse the specified
  * distance of fanins along the critical path (specified by "-t")
@@ -367,7 +367,7 @@ part_collapse_usage:
     return 1;
 }
 
-
+
 /*
  * This routine reports the most favorable cutset found
  */
@@ -418,7 +418,7 @@ print_cutset_usage:
     return 1;
 }
 
-
+
 /*
  * Routine to check the weight computation 
  */
@@ -464,7 +464,7 @@ print_weight_usage:
     (void) fprintf(siserr, "    -m\tmodel\tDelay model. default (\"unit-fanout\").\n");
     return 1;
 }
-
+
 /* Routine to check the internal delay tracing of the speedup routines */
 int
 com__speed_delay(network, argc, argv)
@@ -499,7 +499,7 @@ char **argv;
     }
     return 0;
 }
-
+
 int
 com__report_delay_data(network, argc, argv)
 network_t **network;
@@ -542,7 +542,7 @@ char **argv;
     return 0;
 }
 
-
+
 static int
 com_speedup_alg(network, argc, argv)
 network_t **network;
@@ -579,7 +579,7 @@ usage:
     return 1;
 }
 
-
+
 /* Routine to print the nodes in the network according to level */
 int
 com_print_level(network, argc, argv)
@@ -683,7 +683,7 @@ char **argv;
     (void) fprintf(sisout,"Network is in 2 input and gates\n");
 }
 
-
+
 /* 
  * Utility routine that prints the specified number of high fanout nodes on
  * critical paths
@@ -771,7 +771,7 @@ print_fanout_usage:
     return 1;
 }
 
-
+
 /*
  * Set the defaults that are controllable from the command line ----
  * The rest are controlled/set by the state of the network and library

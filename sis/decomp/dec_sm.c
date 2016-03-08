@@ -51,7 +51,7 @@ node_t *f;
     }
     return M;
 }
-
+
 node_t *
 dec_sm_to_node(M)
 sm_matrix *M;
@@ -91,7 +91,7 @@ sm_matrix *M;
 
     return or;
 }
-
+
 void
 dec_sm_print(M)
 sm_matrix *M;

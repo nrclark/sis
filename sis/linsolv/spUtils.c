@@ -85,7 +85,7 @@ static char RCSid[] =
 
 
 
-
+
 #if MODIFIED_NODAL
 /*
  *  PREORDER MODIFIED NODE ADMITTANCE MATRIX TO REMOVE ZEROS FROM DIAGONAL
@@ -310,7 +310,7 @@ int Col1 = pTwin1->Col, Col2 = pTwin2->Col;
 
 
 
-
+
 #if SCALING
 /*
  *  SCALE MATRIX
@@ -438,7 +438,7 @@ void ScaleComplexMatrix();
 
 
 
-
+
 #if spCOMPLEX AND SCALING
 /*
  *  SCALE COMPLEX MATRIX
@@ -552,7 +552,7 @@ RealNumber  ScaleFactor;
 
 
 
-
+
 #if MULTIPLICATION
 /*
  *  MATRIX MULTIPLICATION
@@ -643,7 +643,7 @@ extern void ComplexMatrixMultiply();
 
 
 
-
+
 #if spCOMPLEX AND MULTIPLICATION
 /*
  *  COMPLEX MATRIX MULTIPLICATION
@@ -744,7 +744,7 @@ register  int  I, *pExtOrder;
 
 
 
-
+
 #if MULTIPLICATION AND TRANSPOSE
 /*
  *  TRANSPOSED MATRIX MULTIPLICATION
@@ -834,7 +834,7 @@ extern void ComplexTransposedMatrixMultiply();
 
 
 
-
+
 #if spCOMPLEX AND MULTIPLICATION AND TRANSPOSE
 /*
  *  COMPLEX TRANSPOSED MATRIX MULTIPLICATION
@@ -935,7 +935,7 @@ register  int  I, *pExtOrder;
 
 
 
-
+
 #if DETERMINANT
 /*
  *  CALCULATE DETERMINANT
@@ -1111,7 +1111,7 @@ ComplexNumber Pivot, cDeterminant;
 
 
 #if STRIP
-
+
 /*
  *  STRIP FILL-INS FROM MATRIX
  *
@@ -1204,7 +1204,7 @@ struct FillinListNodeStruct  *pListNode;
 
 
 
-
+
 #if TRANSLATE AND DELETE
 /*
  *  DELETE A ROW AND COLUMN FROM THE MATRIX
@@ -1330,7 +1330,7 @@ ElementPtr  spcFindElementInCol();
 
 
 
-
+
 #if PSEUDOCONDITION
 /*
  *  CALCULATE PSEUDOCONDITION
@@ -1392,7 +1392,7 @@ RealNumber MaxPivot, MinPivot, Mag;
 
 
 
-
+
 #if CONDITION
 /*
  *  ESTIMATE CONDITION NUMBER
@@ -1901,7 +1901,7 @@ RealNumber Max = 0.0, AbsRowSum;
 
 
 
-
+
 #if STABILITY
 /*
  *  STABILITY OF FACTORIZATION

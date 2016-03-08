@@ -28,7 +28,7 @@ static char *new_file_name;
 
 char *util_save_sp;		/* set by util_restart_save_state() */
 extern char *sbrk();
-
+
 static void
 grow_stack() 
 {
@@ -97,7 +97,7 @@ restart_program()
 
     util_restart_restore_state();	/* jump back into handle_sigquit() */
 }
-
+
 void
 util_restart(old, new, interval)
 char *old, *new;

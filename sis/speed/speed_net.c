@@ -62,7 +62,7 @@ struct a_kern_node{
     speed_global_t *globals;
     };
 
-
+
 int 
 speed_decomp_network(network, node, speed_param, attempt_no)
 network_t *network;
@@ -342,7 +342,7 @@ char *state;
     return 1;
 }
 
-
+
 /*
  * Routine to evaluate a node . Nodes with smaller cost
  * are the ones that are preferred for speedup.

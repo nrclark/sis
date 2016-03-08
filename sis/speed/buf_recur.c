@@ -728,7 +728,7 @@ exit_recursion:
 
     return changed;
 } 
-
+
 /*
  * Compare fanouts -- use the minimum of the rise and fall for the time
  * being. In future it may sort by either rise or fall -- whichever is more 

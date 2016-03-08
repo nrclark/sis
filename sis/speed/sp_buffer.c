@@ -22,7 +22,7 @@ static delay_time_t large_req_time  = {POS_LARGE, POS_LARGE};
 static void sp_already_buffered();
 int sp_satisfy_max_load();
 
-
+
 /*
  * exported routine --- needed to set some of the global variables
  * before calling the appropriate routine.
@@ -62,7 +62,7 @@ int do_decomp;
     return changed;
 }
 
-
+
 /*
  * Buffers the nodes in the network. For now it will select the node
  * on the critical path with the largest fanout -- buffer it -- recompute
@@ -314,7 +314,7 @@ node_t *node;
     (void)st_insert(table, (char *)node, NIL(char));
 }
 
-
+
 /*
  * Optimal buffer selection for the nodes in nodevec based on 
  * the phases and required times of the signals 
@@ -366,7 +366,7 @@ array_t *nodevec;
 
     return changed;
 }
-
+
 /*
  * Finds the amount by which the the required time at the current node 
  * needs to be increased. Basically the negative of the min slack !!!
@@ -458,7 +458,7 @@ double *max_loadp;
 
     return req_diff;
 }
-
+
 /*
  * Buffers the fanouts if fanout count is greater than limit 
  * Returns 1 if the fanout structure at the node was changed
@@ -581,7 +581,7 @@ buf_global_t *buf_param;
 
     return changed;
 }
-
+
 static int speed_do_area_recover();
 
  /* Run the area recovery --- Visit all nodes from the outputs to the

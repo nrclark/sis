@@ -50,7 +50,7 @@ sm_matrix *A;
 
     return rowcnt - A->nrows;
 }
-
+
 int 
 sm_col_dominance(A, weight)
 sm_matrix *A;

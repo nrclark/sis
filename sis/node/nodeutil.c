@@ -66,7 +66,7 @@ node_alloc()
 
     return node;
 }
-
+
 void
 node_free(node)
 node_t *node;
@@ -93,7 +93,7 @@ node_t *node;
 
     FREE(node);
 }
-
+
 node_t *
 node_dup(old)
 register node_t *old;
@@ -142,7 +142,7 @@ register node_t *old;
     }
     return new;
 }
-
+
 node_t **
 nodevec_dup(fanin, nin)
 register node_t **fanin;
@@ -224,7 +224,7 @@ node_discard_all_daemons()
 	daemon_func[(int) type] = 0;
     }
 }
-
+
 network_t *
 node_network(node)
 node_t *node;

@@ -87,7 +87,7 @@ usage:
     
     return 1;
 }
-
+
 init_gcd()
 {
     com_add_command("_gcd", com_print_gcd, /* changes-network */ 0);

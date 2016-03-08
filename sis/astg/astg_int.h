@@ -282,7 +282,7 @@ astg_bool astg_spline_iter ARGS((astg_edge *, astg_generator *, float *, float *
     astg_foreach_signal (stg,gen,sig_p)
     astg_foreach_pos_trans (sig_p,gen,t)
     astg_foreach_neg_trans (sig_p,gen,t)
-     */
+     */
 
 #define astg_iter(g,f)	for (g.first_time=ASTG_TRUE;f;g.first_time=ASTG_FALSE)
 

@@ -82,7 +82,7 @@ pcube *T;			/* T will be disposed of */
 	debug1_print(Tbar, "exit COMPLEMENT", --compl_level);
     return Tbar;
 }
-
+
 static bool compl_special_cases(T, Tbar)
 pcube *T;			/* will be disposed if answer is determined */
 pcover *Tbar;			/* returned only if answer determined */
@@ -150,7 +150,7 @@ pcover *Tbar;			/* returned only if answer determined */
 	return MAYBE;
     }
 }
-
+
 /*
  *  compl_merge -- merge the two cofactors around the splitting
  *  variable
@@ -253,7 +253,7 @@ int lifting;			/* whether to perform lifting or not */
     free_cover(R);
     return Tbar;
 }
-
+
 /*
  *  compl_lift_simple -- expand in the splitting variable using single
  *  cube containment against the other recursion branch to check
@@ -325,7 +325,7 @@ nolift : ;
 	}
     }
 }
-
+
 /*
  *  compl_lift_complex -- expand in the splitting variable, but expand all
  *  parts which can possibly expand.
@@ -417,7 +417,7 @@ register pcube p;
     }
     return R;
 }
-
+
 /* simp_comp -- quick simplification of T */
 void simp_comp(T, Tnew, Tbar)
 pcube *T;			/* T will be disposed of */
@@ -467,7 +467,7 @@ pcover *Tbar;
 	simplify_level--;
     }
 }
-
+
 static bool simp_comp_special_cases(T, Tnew, Tbar)
 pcube *T;			/* will be disposed if answer is determined */
 pcover *Tnew;			/* returned only if answer determined */
@@ -558,7 +558,7 @@ pcover *Tbar;			/* returned only if answer determined */
 	return MAYBE;
     }
 }
-
+
 /* simplify -- quick simplification of T */
 pcover simplify(T)
 pcube *T;			/* T will be disposed of */
@@ -604,7 +604,7 @@ pcube *T;			/* T will be disposed of */
     }
     return Tbar;
 }
-
+
 static bool simplify_special_cases(T, Tnew)
 pcube *T;			/* will be disposed if answer is determined */
 pcover *Tnew;			/* returned only if answer determined */

@@ -41,7 +41,7 @@ Summary:
 	char *util_print_time()
 	char *util_strsav()
 	FILE *util_tmpfile()
-
+
 type *
 ALLOC(type, number)
 typeof type;
@@ -112,7 +112,7 @@ ABS(a)
 NIL_FN(type)
 	A macro that returns a NIL function pointer of type `type'.
 
-
+
 int
 util_pipefork(argv, toCommand, fromCommand, pid)
 char **argv;

@@ -61,7 +61,7 @@ array_t *old;
     (void) memcpy(new->space, old->space, old->num * old->obj_size);
     return new;
 }
-
+
 /* append the elements of array2 to the end of array1 */
 void
 array_append(array1, array2)
@@ -113,7 +113,7 @@ array_t *array2;
     (void) memcpy(pos, array2->space, array2->num * array2->obj_size);
     return array;
 }
-
+
 char *
 array_do_data(array)
 array_t *array;
@@ -142,7 +142,7 @@ int new_size;
     pos = array->space + old_size * array->obj_size;
     (void) memset(pos, 0, (array->n_size - old_size)*array->obj_size);
 }
-
+
 void
 array_sort(array, compare)
 array_t *array;
@@ -183,7 +183,7 @@ void (*free_func)();
 	(void) memcpy(dest, obj1, array->obj_size);
     }
 }
-
+
 int			/* would like to be void, except for macro's */
 array_abort(a,i)
 array_t *a;

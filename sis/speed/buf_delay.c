@@ -35,7 +35,7 @@ double *loadp;		/* RETURN: The input cap + wire load cap at input */
     *loadp = pin_delay->load + buf_param->auto_route;
 }
 
-
+
 /*
  * Gets the input capacitance of node. In the case of a gate it will
  * get the input cap of the first pin for now -- Eventually it should
@@ -92,7 +92,7 @@ pin_phase_t *phase;	/* RETURN: The phase of the selected fanin */
     }
     return drive;
 }
-
+
 
 void
 sp_subtract_delay(phase, block, drive, load, req)
@@ -179,7 +179,7 @@ int k;
     BUFFER(node)->req_time = best;
 }
 
-
+
 
     /*
      * Set drive and load of Primary IP/OP respectively to be that of the

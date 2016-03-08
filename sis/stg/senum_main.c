@@ -60,7 +60,7 @@ ndata *value;
 	(void)st_insert(node_to_ndata_table, (char *)node, (char *)value);
     }
 
-
+
 graph_t *
 stg_extract(network,ctable)
 network_t *network;

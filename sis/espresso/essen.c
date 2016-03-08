@@ -67,7 +67,7 @@ IN pcover *Fp, *Dp;
     sf_free(D);
     return E;
 }
-
+
 /*
     essen_cube -- check if a single cube is essential or not
 

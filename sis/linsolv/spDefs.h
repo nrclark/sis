@@ -104,7 +104,7 @@
 
 
 
-
+
 /*
  *   MACRO DEFINITIONS
  *
@@ -464,7 +464,7 @@ extern char *malloc(), *calloc(), *realloc();
 
 
 
-
+
 /*
  *  REAL NUMBER
  */
@@ -479,7 +479,7 @@ typedef  spREAL  RealNumber, *RealVector;
 
 
 
-
+
 /*
  *  COMPLEX NUMBER DATA STRUCTURE
  *
@@ -505,7 +505,7 @@ typedef  struct
 
 
 
-
+
 /*
  *  MATRIX ELEMENT DATA STRUCTURE
  *
@@ -574,7 +574,7 @@ typedef  ElementPtr  *ArrayOfElementPtrs;
 
 
 
-
+
 /*
  *  ALLOCATION DATA STRUCTURE
  *
@@ -606,7 +606,7 @@ typedef  struct  AllocationRecord  *AllocationListPtr;
 
 
 
-
+
 /*
  *  FILL-IN LIST DATA STRUCTURE
  *
@@ -641,7 +641,7 @@ struct FillinListNodeStruct
 
 
 
-
+
 /*
  *  MATRIX FRAME DATA STRUCTURE
  *

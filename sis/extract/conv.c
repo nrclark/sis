@@ -25,7 +25,7 @@ int use_complement;
  *	global_node_index -- mappnig between column numbers and nodes
  *	global_old_fct -- duplicates of the original nodes, indexed by above
  */
-
+
 void
 ex_setup_globals(network, dup_fcts)
 network_t *network;
@@ -53,7 +53,7 @@ int dup_fcts;		/* if 1, also save the original functions */
 	}
     }
 }
-
+
 void
 ex_setup_globals_single(node)
 node_t *node;
@@ -69,7 +69,7 @@ node_t *node;
     (void) nodeindex_insert(global_node_index, node);
     global_old_fct = NIL(array_t);
 }
-
+
 void
 ex_free_globals(dup_fcts)
 int dup_fcts;
@@ -94,7 +94,7 @@ int i;
 {
     return node_name(nodeindex_nodeof(global_node_index, i));
 }
-
+
 /*
  *  convert a network node into a sparse matrix representation of its
  *  logic function.
@@ -148,7 +148,7 @@ register sm_matrix *M;
 	FREE(fanin_index);
     }
 }
-
+
 sm_matrix *
 ex_network_to_sm(network)
 network_t *network;
@@ -166,7 +166,7 @@ network_t *network;
     }
     return M;
 }
-
+
 /*
  *  map a sparse-matrix representation of a function back into a 'node'
  */
@@ -222,7 +222,7 @@ sm_matrix *func;
     node_replace_internal(node, fanin, nin, F);
     return node;		/* node already minimum base */
 }
-
+
 static int
 ex_divide_each_fanout(fanout, cubes, newnode, debug)
 array_t *fanout;
@@ -307,7 +307,7 @@ node_t *newnode;
     }
     return count;
 }
-
+
 /*
  *  insert sparse matrix function into the network
  *

@@ -37,7 +37,7 @@ char **p1, **p2;
     if (q2->name == 0) node_assign_name(q2);	/* hack */
     return strcmp(q1->name, q2->name);
 }
-
+
 /*
  *  take two nodes, and express them over a common base
  *	- works even if either node has 'duplicate' fanin
@@ -59,7 +59,7 @@ pset_family *newf, *newg;
     *newf = node_sf_adjust(f, *new_fanin, *new_nin);
     *newg = node_sf_adjust(g, *new_fanin, *new_nin);
 }
-
+
 /*
  *  merge the fanin list from multiple nodes into a single, uniq list
  */
@@ -105,7 +105,7 @@ int (*compare)();
     *new_list = list;
     return nlist;
 }
-
+
 /*
  *  adjust a node to place it over a different base
  *	- watch carefully for duplicated fanin in the node
@@ -167,7 +167,7 @@ int new_nin;
     FREE(permute);
     return new_sf;
 }
-
+
 static pset_family 
 do_sf_permute(old_sf, permute, new_nin, has_dup)
 pset_family old_sf;
@@ -218,7 +218,7 @@ int has_dup;
     }
     return new_sf;
 }
-
+
 /*
  *  put 'node' over a minimum base
  *	- removes duplicated fanin if present
@@ -283,7 +283,7 @@ node_t *node;
     node->is_dup_free = 1;
     node->is_scc_minimal = 1;
 }
-
+
 /* intended for internal use only ... */
 node_t *
 node_create(func, fanin, nin)
@@ -357,7 +357,7 @@ node_t *f, *r;
     r->nin = 0;
     node_free(r);
 }
-
+
 int
 node_base_contain(f, g)
 node_t *f, *g;
@@ -395,7 +395,7 @@ node_t *f, *g;
     FREE(listg);
     return 1;
 }
-
+
 static int
 has_dup_fanin(node)
 node_t *node;
@@ -431,7 +431,7 @@ node_t *node;
     }
     node->is_dup_free = 1;
 }
-
+
 /*
  *  adjust a node to place it over a different base
  *	- watch carefully for duplicated fanin in the node
@@ -490,7 +490,7 @@ int new_nin;
     FREE(permute);
     return new_sf;
 }
-
+
 void
 make_common_base_by_name(f, g, new_fanin, new_nin, newf, newg)
 node_t *f, *g;

@@ -52,7 +52,7 @@ node_t *old, *new;
     factor_free(new);
     new->factored = (char *) ft_dup((ft_t *) old->factored);
 }
-
+
 static void
 ft_free(root)
 ft_t *root;
@@ -100,7 +100,7 @@ ft_t *ft_next;
     p->next_level = ft_next;
     return p;
 }
-
+
 void
 factor_traverse(f, func, stat, order)
 node_t *f;
@@ -146,7 +146,7 @@ trav_order order;
 
     return 0;
 }
-
+
 /*
  *  nt2ft: convert node_t tree to ft_t tree.
  */
@@ -164,7 +164,7 @@ node_t *nt;		/* root of the factored node_t tree */
 	return node_to_ft(f, nt);
     }
 }
-
+
 static ft_t *
 node_to_ft(f, np)
 node_t *f;
@@ -246,7 +246,7 @@ node_t *nodep;
 	node_free(nodep);
     }
 }
-
+
 /*
  *  find the best literal of c in f. 
  */
@@ -292,7 +292,7 @@ node_t *f, *c;
 	return NIL(node_t);
     }
 }
-
+
 node_t *
 factor_quick_kernel(f)
 node_t *f;
@@ -306,7 +306,7 @@ node_t *f;
 {
     return ex_find_divisor(f, 1, 1);
 }
-
+
 static array_t *ft_conv();
 static array_t *ft_and_conv();
 static array_t *ft_or_conv();
@@ -369,7 +369,7 @@ node_t **root;
 
     return fa;
 }
-
+
 static array_t *
 ft_or_conv(nf, f, root)
 node_t *nf;

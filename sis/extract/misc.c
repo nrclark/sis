@@ -54,7 +54,7 @@ rect_t *rect;
 
     return fanouts;
 }
-
+
 /*
  *  return a vector of the unique fanouts involved in a rectangle, and also
  *  return a vector of the cubes which are involved in this rectangle

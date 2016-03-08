@@ -145,7 +145,7 @@ int *a_cost;
 	return 1;
     }
 }
-
+
 static int
 speed_weight_bfs(node, speed_param, table, a_array, d_array, o_time,
 		 crit, n, min_a, max_a, min_d, sum_a, sum_d, area)
@@ -240,7 +240,7 @@ double *area;
     st_free_table(area_table);
     return to_cofactor;
 }
-
+
 /*
  * Given a node that fans out of the collapsed logic... mark the part of
  * the collapsed logic that needs to be duplicate. In addition, if the
@@ -284,7 +284,7 @@ delay_model_t model; /* If not UNKNOWN, store required times of side outputs */
     (void) st_insert(area_table, (char *)node, (char *)req);
     array_free(array);
 }
-
+
 static void
 linfit(xin, yin, xmin, ymin, slope)
 array_t *yin, *xin;
@@ -329,7 +329,7 @@ double *slope, xmin, ymin;
     FREE(x);
     FREE(y);
 }
-
+
 
 static void
 speed_sort2(n, ra, rb)
@@ -398,7 +398,7 @@ int n;
     if (j == n) w[n] = n;
 }
 
-
+
 /*
  * For the node, gets the slacks and arrival times.
  * Updates the min, max and sums and inserts the

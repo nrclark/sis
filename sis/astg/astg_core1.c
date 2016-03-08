@@ -17,7 +17,7 @@
 
 int astg_debug_flag;
 
-
+
 /* ------------------------------ Bit arrays -------------------------------- */
 
 static unsigned BA_WORD_SIZE = 0; /* Number of bits in an unsigned.	*/
@@ -128,7 +128,7 @@ astg_ba_rec *ba;
     FREE (ba->bit_array);
     FREE (ba);
 }
-
+
 /* --------------------------- Generic Vertex ------------------------------- */
 
 static astg_vertex *astg_new_vertex (stg,vtype,name,userdata)
@@ -263,7 +263,7 @@ astg_vertex *v;
 {
     return v->selected;
 }
-
+
 /* ------------------------------- Places ----------------------------------- */
 
 astg_place *astg_new_place (g,name,userdata)
@@ -371,7 +371,7 @@ astg_place *p;
 	p->name = util_strsav(place_name);
     }
 }
-
+
 /* -------------------------------------------------------------------------- *\
    The flow search history is maintained in a hash table, key=state code,
    data=array of markings and enabled transitions for that
@@ -477,7 +477,7 @@ astg_bool create;
     }
     return state;
 }
-
+
 /* ------------------------ More Token Firing Stuff ------------------------- */
 
 astg_bool astg_sim_node (node,f,stg,data)
@@ -818,7 +818,7 @@ astg_place *p;
 	}
     return astg_ba_get (marking->marked_places,p->type.place.flow_id);
 }
-
+
 /* ---------------------------- Transitions --------------------------------- */
 
 static char *astg_sanitize_name (name)
@@ -1001,7 +1001,7 @@ astg_trans *t;
 {
     return t->type.trans.sig_p;
 }
-
+
 /* -------------------------------- Edges ----------------------------------- */
 
 astg_edge *astg_new_edge (tail,head)
@@ -1177,7 +1177,7 @@ astg_bool create;
     if (create) return astg_new_edge (v1,v2);
     return NULL;
 }
-
+
 /* -------------------------------- Graph ----------------------------------- */
 
 astg_graph *astg_new (grName)
@@ -1346,7 +1346,7 @@ char     *name;
     astg_do_daemons (g,old_g,ASTG_DAEMON_DUP);
     return g;
 }
-
+
 /* -------------------------------- Marking stuff --------------------------- */
 
 extern astg_scode astg_marking_enabled (marking_p)
@@ -1412,7 +1412,7 @@ astg_marking *m1, *m2;
     }
     return result;
 }
-
+
 /* --------------------------------- States stuff --------------------------- */
 astg_state *astg_new_state (stg)
 astg_graph *stg;
@@ -1470,7 +1470,7 @@ astg_state *state_p;
     array_free (state_p->states);
     FREE (state_p);
 }
-
+
 /* ----------------------------- Iterator Functions ------------------------- */
 
 astg_bool astg_spline_iter (e,gen,xp,yp)
@@ -1722,7 +1722,7 @@ astg_marking **marking_p;
     return ASTG_TRUE;
 }
 
-
+
 /* ----------------------------- Misc --------------------------------------- */
 
 astg_bool astg_is_rel (t1,t2)
@@ -1764,7 +1764,7 @@ astg_bool check;		/*i Check first before adding?		*/
 	stg->has_marking = ASTG_FALSE;
     }
 }
-
+
 /* ------------------- Net Selection Functions ------------------ */
 
 void astg_sel_vertex (v,val)
@@ -1856,7 +1856,7 @@ astg_graph *stg;
 	com_graphics_close (gfp);
     }
 }
-
+
 /* ---------------------------- Signal Stuff ----------------------- */
 
 astg_signal_enum astg_signal_type (sig)
@@ -2038,7 +2038,7 @@ astg_signal *sig1, *sig2;
 
     return is_trigger;
 }
-
+
 /* ---------------------- Write PLA (espresso) format ----------------------- */
 
 static int add_espresso (stg, fout, in_mask, out_mask, new_state, delta_ns)

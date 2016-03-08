@@ -97,7 +97,7 @@ static int MatrixIsSingular();
 static int ZeroPivot();
 
 
-
+
 /*
  *  ORDER AND FACTOR MATRIX
  *
@@ -302,7 +302,7 @@ Done:
 
 
 
-
+
 /*
  *  FACTOR MATRIX
  *
@@ -434,7 +434,7 @@ RealNumber Mult;
 
 
 
-
+
 #if spCOMPLEX
 /*
  *  FACTOR COMPLEX MATRIX
@@ -555,7 +555,7 @@ ComplexNumber Mult, Pivot;
 
 
 
-
+
 /*
  *  PARTITION MATRIX
  *
@@ -724,7 +724,7 @@ BOOLEAN *DoRealDirect, *DoCmplxDirect;
 
 
 
-
+
 /*
  *  CREATE INTERNAL VECTORS
  *
@@ -803,7 +803,7 @@ int  Size;
 
 
 
-
+
 /*
  *  COUNT MARKOWITZ
  *
@@ -912,7 +912,7 @@ int  ExtRow;
 
 
 
-
+
 /*
  *  MARKOWITZ PRODUCTS
  *
@@ -988,7 +988,7 @@ double fProduct;
 
 
 
-
+
 /*
  *  SEARCH FOR BEST PIVOT
  *
@@ -1092,7 +1092,7 @@ ElementPtr  SearchEntireMatrix();
 
 
 
-
+
 /*
  *  SEARCH FOR SINGLETON TO USE AS PIVOT
  *
@@ -1269,7 +1269,7 @@ RealNumber  PivotMag, FindBiggestInColExclude();
 
 
 
-
+
 #if DIAGONAL_PIVOTING
 #if MODIFIED_MARKOWITZ
 /*
@@ -1486,7 +1486,7 @@ RealNumber  FindBiggestInColExclude();
 
 
 
-
+
 #else /* Not MODIFIED_MARKOWITZ */
 /*
  *  QUICK SEARCH OF DIAGONAL FOR PIVOT WITH CONVENTIONAL MARKOWITZ
@@ -1652,7 +1652,7 @@ RealNumber  FindBiggestInColExclude();
 
 
 
-
+
 /*
  *  SEARCH DIAGONAL FOR PIVOT WITH MODIFIED MARKOWITZ CRITERION
  *
@@ -1776,7 +1776,7 @@ RealNumber  FindBiggestInColExclude();
 
 
 
-
+
 /*
  *  SEARCH ENTIRE MATRIX FOR BEST PIVOT
  *
@@ -1926,7 +1926,7 @@ RealNumber  FindLargestInCol();
 
 
 
-
+
 /*
  *  DETERMINE THE MAGNITUDE OF THE LARGEST ELEMENT IN A COLUMN
  *
@@ -1981,7 +1981,7 @@ RealNumber  Magnitude, Largest = 0.0;
 
 
 
-
+
 /*
  *  DETERMINE THE MAGNITUDE OF THE LARGEST ELEMENT IN A COLUMN
  *  EXCLUDING AN ELEMENT
@@ -2066,7 +2066,7 @@ RealNumber  Largest, Magnitude;
 
 
 
-
+
 /*
  *  EXCHANGE ROWS AND COLUMNS
  *
@@ -2198,7 +2198,7 @@ ElementPtr spcFindElementInCol();
 
 
 
-
+
 /*
  *  EXCHANGE ROWS
  *
@@ -2299,7 +2299,7 @@ ElementPtr  Element1, Element2;
 
 
 
-
+
 /*
  *  EXCHANGE COLUMNS
  *
@@ -2398,7 +2398,7 @@ ElementPtr  Element1, Element2;
 
 
 
-
+
 /*
  *  EXCHANGE TWO ELEMENTS IN A COLUMN
  *
@@ -2538,7 +2538,7 @@ register  ElementPtr  pElement;
 
 
 
-
+
 /*
  *  EXCHANGE TWO ELEMENTS IN A ROW
  *
@@ -2684,7 +2684,7 @@ register   ElementPtr  pElement;
 
 
 
-
+
 /*
  *  PERFORM ROW AND COLUMN ELIMINATION ON REAL MATRIX
  *
@@ -2773,7 +2773,7 @@ extern ElementPtr  CreateFillin();
 
 
 
-
+
 /*
  *  PERFORM ROW AND COLUMN ELIMINATION ON COMPLEX MATRIX
  *
@@ -2861,7 +2861,7 @@ ElementPtr  CreateFillin();
 
 
 
-
+
 /*
  *  UPDATE MARKOWITZ NUMBERS
  *
@@ -2943,7 +2943,7 @@ double Product;
 
 
 
-
+
 /*
  *  CREATE FILL-IN
  *
@@ -3018,7 +3018,7 @@ ElementPtr  spcCreateElement();
 
 
 
-
+
 /*
  *  ZERO PIVOT ENCOUNTERED
  *
@@ -3068,7 +3068,7 @@ int  Step;
 
 
 #if ANNOTATE == FULL
-
+
 /*
  *
  *  WRITE STATUS

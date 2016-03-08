@@ -84,7 +84,7 @@ static char RCSid[] =
 
 
 
-
+
 /*
  *  CLEAR MATRIX
  *
@@ -157,7 +157,7 @@ register  int  I;
 
 
 
-
+
 /*
  *  SINGLE ELEMENT ADDITION TO MATRIX BY INDEX
  *
@@ -266,7 +266,7 @@ void  Translate();
 
 
 
-
+
 /*
  *  FIND ELEMENT BY SEARCHING COLUMN
  *
@@ -344,7 +344,7 @@ ElementPtr  spcCreateElement();
 
 
 #if TRANSLATE
-
+
 /*
  *  TRANSLATE EXTERNAL INDICES TO INTERNAL
  *
@@ -453,7 +453,7 @@ register int IntRow, IntCol, ExtRow, ExtCol;
 
 
 
-
+
 #if QUAD_ELEMENT
 /*
  *  ADDITION OF ADMITTANCE TO MATRIX BY INDEX
@@ -523,7 +523,7 @@ struct  spTemplate  *Template;
 
 
 
-
+
 #if QUAD_ELEMENT
 /*
  *  ADDITION OF FOUR ELEMENTS TO MATRIX BY INDEX
@@ -610,7 +610,7 @@ struct  spTemplate  *Template;
 
 
 
-
+
 #if QUAD_ELEMENT
 /*
  *  ADDITION OF FOUR STRUCTURAL ONES TO MATRIX BY INDEX
@@ -681,7 +681,7 @@ struct  spTemplate  *Template;
 
 
 
-
+
 /*
  *
  *  CREATE AND SPLICE ELEMENT INTO MATRIX
@@ -842,7 +842,7 @@ ElementPtr  pCreatedElement, spcGetElement(), spcGetFillin();
 
 
 
-
+
 /*
  *
  *  LINK ROWS
@@ -902,7 +902,7 @@ register  int  Col;
 
 
 
-
+
 /*
  *  ENLARGE MATRIX
  *
@@ -990,7 +990,7 @@ register int I, OldAllocatedSize = Matrix->AllocatedSize;
 
 
 #if TRANSLATE
-
+
 /*
  *  EXPAND TRANSLATION ARRAYS
  *
@@ -1052,7 +1052,7 @@ register int I, OldAllocatedSize = Matrix->AllocatedExtSize;
 
 
 
-
+
 #if INITIALIZE
 /*
  *   INITIALIZE MATRIX

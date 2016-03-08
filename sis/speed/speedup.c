@@ -49,7 +49,7 @@ node_t *node;
     return FALSE;
 }
 
-
+
 void
 speed_up_network(network, speed_param)
 network_t *network;
@@ -127,7 +127,7 @@ speed_global_t *speed_param;
     st_free_table(table);
 }
 
-
+
 /*
  * Exported interface to the routine speed_up_node () that decomposes
  * a node in place in the network (assuming a valid trace)...
@@ -260,7 +260,7 @@ speed_global_t *speed_param;
     array_free(nodevec);
     return 0;
 }
-
+
 static void
 speed_replace(network, np, nodes, speed_param)
 network_t *network;
@@ -363,7 +363,7 @@ speed_global_t *speed_param;
 	(void)speed_update_arrival_time(np, speed_param);
     } 
 }
-
+
 /*
  * Substitute node f into other nodes in the network and not in "table".
  * The node "f" might have no fanouts if the substitution is made . In that case

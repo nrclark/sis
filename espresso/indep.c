@@ -36,7 +36,7 @@ sm_row *indep;
     return 1;
 }
 #endif
-
+
 solution_t * 
 sm_maximal_independent_set(A, weight)
 sm_matrix *A;
@@ -94,7 +94,7 @@ int *weight;
 */
     return indep;
 }
-
+
 static sm_matrix *
 build_intersection_matrix(A)
 sm_matrix *A;

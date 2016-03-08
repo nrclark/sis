@@ -121,7 +121,7 @@ int delay_flag; 	/* 1=> use user field */
     return array;
 }
 
-
+
 void
 speed_adjust_phase(network)
 network_t *network;

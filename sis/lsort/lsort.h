@@ -91,7 +91,7 @@ int (*compare)();
 }
 
 #endif
-
+
 DECL_SORT TYPE *
 SORT(list_in, compare, cnt)
 TYPE *list_in;

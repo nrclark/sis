@@ -143,7 +143,7 @@ node_t *node;
     sm_row_free(cover);
     return ite;
 }
-
+
 
 /* checks for a row of 2's. returns 1 if true else 0*/ 
 static int 
@@ -166,7 +166,7 @@ sm_matrix *F;
     return 0;
 }
 
-
+
 
 
 

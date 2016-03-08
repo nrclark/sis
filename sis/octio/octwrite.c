@@ -34,7 +34,7 @@ static char *octCellPath, *octCellView;
 /* name of the program - for errtrap */
 char *optProgName = "sis";
 
-
+
 
 /*
  * special routines to make octGetByName faster (use hash tables)
@@ -112,7 +112,7 @@ char *name;
     return;
 }
 
-
+
 
 /*
  * routines to attach required SYMBOLIC policy properties
@@ -212,7 +212,7 @@ octObject *facet;
     return;
 }
     
-
+
 
 /*
  * replacements for the 'library' package functions to handle
@@ -350,7 +350,7 @@ oct_lib_get_gate_cell_and_view(node, facet, cell, view)
     }	
 }
 
-
+
 
 static void
 factored_form(network, orig_node, node, fform)
@@ -645,7 +645,7 @@ void create_latch( facet, node, latch )
 }
 #endif /* SIS */
 
-
+
 #ifdef SIS   /* Support for writing clocks */
 
 #define DONE_RISE_TRANSITION 1
@@ -800,7 +800,7 @@ write_oct_clocks(network, facet, short_flag )
     st_free_table(done_table);
 }
 #endif /* SIS */
-
+
 
 void
 write_oct(network, facet)
@@ -932,7 +932,7 @@ write_oct(network, facet)
     return;
 }
 
-
+
 
 static jmp_buf sis_oct_error_buf;
 

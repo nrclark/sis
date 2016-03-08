@@ -55,7 +55,7 @@
  *  IRREDUNDANT to enumerate all possible subsets and then proceed as
  *  before.
  */
-
+
 static int opo_no_make_sparse;
 static int opo_repeated;
 static int opo_exact;
@@ -87,7 +87,7 @@ int opo_strategy;
     (void) set_phase(PLA);
     esp_minimize(PLA);
 }
-
+
 /*
  *  repeated_phase_assignment -- an alternate strategy which commits
  *  to a single phase assignment a step at a time.  Performs m + 1
@@ -160,7 +160,7 @@ pcube phase1;
 
     return phase;
 }
-
+
 /*
  *  opo -- multiply the expression out to determine a minimum subset of
  *  primes.
@@ -233,7 +233,7 @@ int first_output;
     set_free(not_covered);
     return T1;
 }
-
+
 pset_family opo_recur(T, D, select, offset, first, last)
 pcover T, D;
 pcube select;
@@ -396,7 +396,7 @@ int n;
     return f_table;
 }
 #endif
-
+
 /*
  *  Take a PLA (ON-set, OFF-set and DC-set) and create the
  *  "double-phase characteristic function" which is merely a new
@@ -496,7 +496,7 @@ int first_output;
     set_free(mask);
     set_free(mask1);
 }
-
+
 /*
  *  set_phase -- given a "cube" which describes which phases of the output
  *  are to be implemented, compute the appropriate on-set and off-set
@@ -532,7 +532,7 @@ INOUT pPLA PLA;
     PLA->R = R1;
     return PLA;
 }
-
+
 #define POW2(x)		(1 << (x))
 
 void opoall(PLA, first_output, last_output, opo_strategy)
@@ -612,7 +612,7 @@ int opo_strategy;
     PLA->D = best_D;
     PLA->R = best_R;
 }
-
+
 static void
 esp_minimize(PLA)
 pPLA PLA;

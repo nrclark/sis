@@ -75,7 +75,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 int
 com_pf(network, argc, argv)
 network_t **network;
@@ -109,7 +109,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 int
 com_pv(network, argc, argv)
 network_t **network;
@@ -175,7 +175,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 int
 com_pft(network, argc, argv)
 network_t **network;
@@ -331,7 +331,7 @@ char *s;
     return 1;
 }
 
-
+
 init_factor()
 {
     set_line_width();

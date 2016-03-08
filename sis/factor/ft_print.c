@@ -143,7 +143,7 @@ int *len;
 	}
     }
 }
-
+
 static char *and_name = "AND";
 static char *or_name = "OR";
 static char *inv_name = "INV";
@@ -206,7 +206,7 @@ ft_t *f;
 
     return name;
 }
-
+
 /*
  * pretty printer of factored form
  */

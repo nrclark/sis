@@ -139,7 +139,7 @@ int *stg_state;
 	}
     }
 }
-
+
 
 static int
 is_state(cid,obj,level)

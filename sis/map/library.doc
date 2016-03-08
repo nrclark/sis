@@ -54,7 +54,7 @@ library_t *library;
 char *name;
 	Get a gate by its name.  Returns NIL(lib_gate_t) if no gate with
 	that name is found in 'library'.
-
+
 /*
  *  Attributes of a class
  */
@@ -78,7 +78,7 @@ lib_class_network(class)
 lib_class_t *class;
 	Return a 'network' which represents the logic function associated
 	with a class.  Do not alter or free this network.
-
+
 /*
  *  Attributes of a gate
  */
@@ -125,7 +125,7 @@ int
 lib_gate_num_out(gate)
 lib_gate_t *gate;
 	Returns the number of outputs of the gate.
-
+
 /*
  *  Mixing the library and node packages
  */
@@ -185,7 +185,7 @@ int nin;
 	created latch structure (latch_t) are set: input, output, synch_type and gate.
 	The rest of the fields (initial value, current_value and control) must be 
 	set by the calling program.
-
+
 Generator usage example:
 	lsGen gen, gen1; 
 	library_t *library; 

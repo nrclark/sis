@@ -31,7 +31,7 @@ char *old_astg;
     /*	Free all structures for the given network astg slot. */
     astg_delete ((astg_graph*) old_astg);
 }
-
+
 extern astg_graph *astg_current (network)
 network_t *network;		/*i network to find astg info for	*/
 {
@@ -103,7 +103,7 @@ char  *cmd;
 	fputs ("\n",stdout);
     }
 }
-
+
 static char *flow_usage[] = {
 
     "usage: %s [-x] [-l <latch-type>] [-o <outfile>] [-q]",
@@ -932,7 +932,7 @@ char **argv;
 
     return (result != ASTG_OK);
 }
-
+
 typedef struct astg_cmd_rec {
     char	 *cmd_name;
     int		(*cmd)();

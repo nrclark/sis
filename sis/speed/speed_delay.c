@@ -138,7 +138,7 @@ library_t *lib;
     pin_delay = (delay_pin_t *)(best_gate->delay_info[0]);
     return pin_delay;
 }
-
+
 
 int
 speed_update_arrival_time(node, speed_param)
@@ -253,7 +253,7 @@ delay_time_t *delay;
     }
     return 1;
 }
-
+
 void 
 speed_delay_arrival_time(node, speed_param, time)
 node_t *node;
@@ -405,7 +405,7 @@ node_t *node;
     delay_set_parameter(node, DELAY_ARRIVAL_FALL, DELAY_NOT_SET);
 }
 
-
+
 /* ARGSUSED */
 void
 speed_update_fanout(network, nodevec, fanout_list, speed_param)

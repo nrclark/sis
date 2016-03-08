@@ -126,7 +126,7 @@ struct map_struct {
     node_t *fanout_source;
     fanin_fanout_t *pin_info;	/* only allocated when necessary */
 };
-
+
  /* to pass options */
 
 typedef struct bin_global_struct bin_global_t;
@@ -164,7 +164,7 @@ struct bin_global_struct {
   int penalty_factor;		/* if check_load_limit set, load exceeding gate limit is multiplied by penalty_factor */
   int all_gates_area_recover;   /* when set, recover area on all gates, not only buffers */
 };
-
+
 typedef struct match_struct match_t;
 struct match_struct {
     int ninputs;
@@ -175,7 +175,7 @@ struct match_struct {
     lib_gate_t *gate;
 };
 
-
+
 #define MAP_SLOT		map
 #if defined(_IBMR2) || defined(__osf__)
 #define MAP(node)		((alt_map_t *) (node)->MAP_SLOT)

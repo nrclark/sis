@@ -68,7 +68,7 @@ pcover F, D;
     free_cubelist(FD);
     return G;
 }
-
+
 /*
  *  expand_gasp -- expand each nonprime cube of F into a prime implicant
  *
@@ -184,7 +184,7 @@ pcover *G;
     free_cube(FREESET);
     free_cube(temp);
 }
-
+
 /* irred_gasp -- Add new primes to F and find an irredundant subset */
 pcover irred_gasp(F, D, G)
 pcover F, D, G;                 /* G is disposed of */

@@ -165,7 +165,7 @@ XtPointer call_data;		/*i List widget information.	*/
     XawListReturnStruct *info = (XawListReturnStruct*) call_data;
     SetHelp ((xhelp_info*)closure,info->string);
 }
-
+
 static xsis_cmds xhelp_cmds[] = {
     { NULL }
 };

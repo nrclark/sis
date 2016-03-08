@@ -101,7 +101,7 @@ int use_mapped;
 	routine accessing the nodes in the original network so as to
 	preserve the mapping of the circuit.
 
-
+
 /* Memory management functions */
 
 re_graph *
@@ -137,7 +137,7 @@ double breadth;
 	the cost of putting a latch on it (may exceed 1 if it represents
 	a bus).
 
-
+
 /* Counting functions */
 
 int
@@ -178,7 +178,7 @@ re_num_fanouts(node)
 re_node *node;
 	Return the number of fanout edges from node.
 
-
+
 /* Random access functions */
 
 re_node *
@@ -230,7 +230,7 @@ int index;
 	edges are numbered starting from 0.  Returns NIL(re_edge) 
 	if index >= re_num_fanouts(node).
 
-
+
 /* Generators */
 
 re_foreach_node(graph, index, node)
@@ -296,7 +296,7 @@ re_node *node;
     traversal these nodes should not be visited since some fields
     may be out of date.
 
-
+
 /* Exportable retiming functions */
 
 int

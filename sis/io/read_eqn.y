@@ -73,7 +73,7 @@ node_t *(*func)();
 }
 
 %}
-
+
 %union {
     char *strval;
     node_t *node;
@@ -237,7 +237,7 @@ output_list:	/* empty */
 	;
 
 %%
-
+
 static jmp_buf jmpbuf;
 
 int
@@ -248,7 +248,7 @@ char *errmsg;
     longjmp(jmpbuf, 1);
 }
 
-
+
 network_t *
 read_eqn(fp)
 FILE *fp;
@@ -283,7 +283,7 @@ FILE *fp;
 	return global_network;
     }
 }
-
+
 network_t *
 read_eqn_string(s)
 char *s;

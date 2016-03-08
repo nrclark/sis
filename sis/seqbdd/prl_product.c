@@ -13,7 +13,7 @@
 #include "prl_util.h"
 #include "prioqueue.h"
 
-
+
 
 static void compute_po_ordering ARGS((seq_info_t *, prl_options_t *));
 static void compute_pi_ordering ARGS((seq_info_t *, prl_options_t *));
@@ -106,7 +106,7 @@ prl_options_t *options;
   array_free(ordering);
   array_free(next_state_po);
 }
-
+
 static array_t *order_dfs_from_count ARGS((node_t *, st_table *, int, int*, int));
 static void add_new_inputs 	     ARGS((seq_info_t *, array_t *));
 static void add_next_state_vars      ARGS((seq_info_t *, st_table *));
@@ -309,7 +309,7 @@ st_table *next_state_table;
     array_insert_last(bdd_t *, seq_info->transition.next_state_vars, var);
   }
 }
-
+
 static void extract_support_info_rec ARGS((node_t *, st_table *, st_table *, var_set_t *));
 
 /*
@@ -376,7 +376,7 @@ var_set_t *set;
 	}
     }
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -464,7 +464,7 @@ int verbosity;
     *order_count += array_n(result);
     return result;
 }
-
+
 /*
  *----------------------------------------------------------------------
  *
@@ -507,7 +507,7 @@ int verbosity;
     st_insert(leaves, (char *) node, (char *) varid);
 }
 
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -562,7 +562,7 @@ prl_options_t *options;
   Prl_FreeBddArray(seq_info->transition.next_state_vars);
   Prl_FreeBddArray(seq_info->transition.product.transition_fns);
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -595,7 +595,7 @@ prl_options_t *options;
   return result;
 }
 
-
+
 
 static bdd_t *BddIncrAndSmooth ARGS((seq_info_t *, bdd_t *, array_t *, prl_options_t *));
 
@@ -735,7 +735,7 @@ char *obj;
     fn_info_t *info = (fn_info_t *) obj;
     (void) fprintf(misout, "fn %d", info->fnid);
 }
-
+
 
 static support_info_t *support_info_extract ARGS((seq_info_t *, bdd_t **, int, array_t *, prl_options_t *));
 static void            support_info_free    ARGS((support_info_t *));
@@ -789,7 +789,7 @@ prl_options_t *options;
   support_info_free(support_info);
   return resulting_product;
 }
-
+
 
 static void 	 extract_var_info 	   ARGS((support_info_t *, st_table *));
 static void 	 smooth_lonely_variables   ARGS((support_info_t *, prl_options_t *));
@@ -1011,7 +1011,7 @@ prl_options_t *options;
   }
   array_free(var_array);
 }
-
+
 
 static void     fn_info_free 	    ARGS((fn_info_t *));
 static array_t *smooth_vars_extract ARGS((support_info_t *, fn_info_t *, fn_info_t *));

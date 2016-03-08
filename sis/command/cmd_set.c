@@ -77,7 +77,7 @@ char **argv;
 	return 0;
     }
 }
-
+
 /* ARGSUSED */
 com_unset_variable(network, argc, argv)
 network_t **network;
@@ -101,7 +101,7 @@ char **argv;
     }
     return 0;
 }
-
+
 char *
 com_get_flag(flag)
 char *flag;

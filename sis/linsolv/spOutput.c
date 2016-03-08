@@ -75,7 +75,7 @@ static char RCSid[] =
 
 
 #if DOCUMENTATION
-
+
 /*
  *  PRINT MATRIX
  *
@@ -370,7 +370,7 @@ int  *PrintOrdToIntRowMap, *PrintOrdToIntColMap;
 
 
 
-
+
 /*
  *  OUTPUT MATRIX TO FILE
  *
@@ -530,7 +530,7 @@ FILE  *pMatrixFile, *fopen();
 
 
 
-
+
 /*
  *  OUTPUT SOURCE VECTOR TO FILE
  *
@@ -652,7 +652,7 @@ FILE  *fopen();
 
 
 
-
+
 /*
  *  OUTPUT STATISTICS TO FILE
  *

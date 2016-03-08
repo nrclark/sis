@@ -74,7 +74,7 @@ sm_row  *row;
 
     return count;
 }
-
+
 void
 phase_invert(net_phase, node_phase)
 net_phase_t *net_phase;
@@ -132,7 +132,7 @@ node_phase_t *node_phase;
 	check_phase(net_phase);
     }
 }
-
+
 static void
 phase_do_invert(net_phase, row)
 net_phase_t *net_phase;
@@ -183,7 +183,7 @@ sm_row *row;
 	}
     }
 }
-
+
 node_phase_t *
 phase_get_best(net_phase)
 net_phase_t *net_phase;
@@ -241,7 +241,7 @@ node_phase_t *node_phase;
     rd = sm_get(row_data_t *, node_phase->row);
     rd->marked = TRUE;
 }
-
+
 net_phase_t *
 phase_dup(net_phase)
 net_phase_t *net_phase;
@@ -298,7 +298,7 @@ net_phase_t *old, *new;
     new->rows = rows;
     phase_free(new);
 }
-
+
 static row_data_t *
 row_data_dup(row_data)
 row_data_t *row_data;
@@ -329,7 +329,7 @@ element_data_t *element_data;
 
     return new;
 }
-
+
 void
 phase_free(net_phase)
 net_phase_t *net_phase;
@@ -359,7 +359,7 @@ net_phase_t *net_phase;
     sm_free(net_phase->matrix);
     FREE(net_phase);
 }
-
+
 void
 phase_print(net_phase)
 net_phase_t *net_phase;
@@ -406,7 +406,7 @@ net_phase_t *net_phase;
     }
     (void) fprintf(misout, "cost = %6.0f\n", net_phase->cost);
 }
-
+
 void
 phase_check_set()
 {
@@ -470,7 +470,7 @@ net_phase_t *net_phase;
 	exit(-1);
     }
 }
-
+
 /*
  *  1. decrease the output inverter saving of row.
  *  2. decrease the input inverter saving of row for each fanout of row.
@@ -528,7 +528,7 @@ sm_row *row;
 	}
     }
 }
-
+
 static bool
 fanout_to_po(f)
 node_t *f;
@@ -552,7 +552,7 @@ node_t *f;
     }
     return FALSE;
 }
-
+
 void
 phase_random_assign(net_phase)
 net_phase_t *net_phase;
@@ -641,7 +641,7 @@ net_phase_t *net_phase;
     phase_invertible_set(row_data);
     phase_count_comp(np, table, net_phase);
 }
-
+
 phase_fanout_setup(rowi, np, table, net_phase, phase)
 int rowi;
 node_t *np;

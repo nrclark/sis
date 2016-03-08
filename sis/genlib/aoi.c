@@ -30,7 +30,7 @@ char *x, *y;
 
     return tree1->p - tree2->p;
 }
-
+
 int
 gl_gen_complex_gates(level, s, p, root_type, forms)
 int level, s, p;
@@ -139,7 +139,7 @@ tree_node_t ***forms;
     nforms = gl_hash_end(hash, forms);
     return nforms;
 }
-
+
 int 
 gl_generate_complex_gates(level, s, p, forms)
 int level, s, p;

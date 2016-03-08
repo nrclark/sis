@@ -54,7 +54,7 @@ tree_node_t *node;
     if (node->name != NIL(char)) FREE(node->name);
     FREE(node);
 }
-
+
 tree_node_t *
 gl_dup_tree(tree)
 tree_node_t *tree;
@@ -85,7 +85,7 @@ tree_node_t *tree;
     }
     gl_free_node(tree);
 }
-
+
 
 tree_node_type_t
 gl_reverse_type(type)
@@ -183,7 +183,7 @@ check_sons:
 	gl_make_well_formed(tree->sons[i]);
     }
 }
-
+
 void 
 gl_compute_level(tree, s, p, level)
 tree_node_t *tree;
@@ -211,7 +211,7 @@ int *s, *p, *level;
 	*level += 1;
     }
 }
-
+
 void
 gl_print_tree_recur(fp, tree, level)
 FILE *fp;
@@ -253,7 +253,7 @@ tree_node_t *tree;
 	(void) putc('\'', fp);
     }
 }
-
+
 void
 gl_print_tree_recur_algebraic(fp, tree, level)
 FILE *fp;
@@ -298,7 +298,7 @@ tree_node_t *tree;
 	(void) putc(')', fp);
     }
 }
-
+
 int 
 gl_qsort_compare_tree(t1, t2)
 tree_node_t **t1, **t2;
@@ -339,7 +339,7 @@ tree_node_t *tree;
     qsort((char *) tree->sons, (int) tree->nsons, 
 			sizeof(tree_node_t *), gl_qsort_compare_tree);
 }
-
+
 static tree_node_t **g_forms;
 static int g_num;
 
@@ -393,7 +393,7 @@ tree_node_t *tree;
 	return 1;
     }
 }
-
+
 static void
 gl_assign_node_names_recur(tree, count)
 tree_node_t *tree;
@@ -448,7 +448,7 @@ tree_node_t *tree;
 
     gl_assign_leaf_names_recur(tree, &count);
 }
-
+
 static void
 gl_get_unique_leaf_pointers_recur(tree, unique_names)
 tree_node_t *tree;
@@ -487,7 +487,7 @@ tree_node_t ***leafs;
     st_free_table(unique_names);
     return nleafs;
 }
-
+
 gl_tree_dump(tree)
 tree_node_t *tree;
 {

@@ -165,7 +165,7 @@ octObject *instance;
     st_free_table(table);
     return(result);
 }
-
+
 #ifdef SIS
 /* 
 
@@ -346,7 +346,7 @@ read_oct_clock(network,facet)
 }
 #endif /* SIS */
 
-
+
 struct termInfo {
     char *name;
     network_t *logicFunction;
@@ -649,7 +649,7 @@ octObject *instance;
 }
 
 #endif /* SIS */
-
+
 	
 network_t *
 read_oct(facet, mappedp)
@@ -993,7 +993,7 @@ int mappedp;
     return(network);
 }
 
-
+
 
 static jmp_buf sis_oct_error_buf;
 

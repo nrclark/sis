@@ -60,7 +60,7 @@ node_t *node;
 /* Free up the space*/
     sm_free_space(F);
 }
-
+
 
 
 /* Constructs the cover of the node. We use the sm package because we 
@@ -107,7 +107,7 @@ node_t *node;
     return F;
 }
 
-
+
 
 /* Recurse !! using Unate recursive paradigm(modified)*/
 static
@@ -180,7 +180,7 @@ sm_matrix *F;
     return act;
 	
 }
-
+
 
 /* Choose good variable for co-factoring*/
 static int   
@@ -237,7 +237,7 @@ int *ex;
     FREE(z);	
     return var; 
 }
-	
+	
 
     
 static int 
@@ -263,7 +263,7 @@ int *o, *z, size;
     }
     return var;
 }
-				
+				
 
 /* Divide matrix into the 2 co-factored matrices*/
 static void

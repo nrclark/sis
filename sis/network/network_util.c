@@ -137,7 +137,7 @@ network_t *old;
 #endif /* SIS */
     return new;
 }
-
+
 network_num_pi(network)
 network_t *network;
 {
@@ -198,7 +198,7 @@ int index;
     }
     return 0;
 }
-
+
 void
 network_add_primary_input(network, node)
 network_t *network;
@@ -289,7 +289,7 @@ node_t *node;
     /* patch the fanout lists for our fanin's */
     fanin_add_fanout(node);
 }
-
+
 void
 network_delete_node(network, node)
 network_t *network;
@@ -342,7 +342,7 @@ lsGen gen;
     node->net_handle = 0;
     node_free(node);
 }
-
+
 node_t *
 network_find_node(network, name)
 network_t *network;
@@ -356,7 +356,7 @@ char *name;
 	return 0;
     }
 }
-
+
 static int
 delete_from_list(list, node)
 lsList list;
@@ -400,7 +400,7 @@ node_type_t new_type;
 	LS_ASSERT(lsNewEnd(network->po, (lsGeneric) node, LS_NH));
     }
 }
-
+
 char *
 network_name(network)
 network_t *network;
@@ -421,7 +421,7 @@ char *name;
     FREE(network->net_name);
     network->net_name = util_strsav(name);
 }
-
+
 static void
 reset_io(list)
 lsList list;
@@ -469,7 +469,7 @@ network_t *newnetwork;
 	newnode->net_handle = handle;
     }
 }
-
+
 
 #ifdef SIS
 
@@ -546,7 +546,7 @@ char *new_name;
 	fail("change_short_name: node with same name already exists");
     }
 }
-
+
 void
 network_swap_names(network, node1, node2)
 network_t *network;
@@ -595,7 +595,7 @@ bdd_manager *bdd;
     return(h);
 }
 
-
+
 network_t *
 network_dc_network(network)
 network_t *network;
@@ -643,7 +643,7 @@ network_t *network;
     }
     return node_exdc_table;
 }
-
+
 network_t *
 or_net_dcnet(network)
 network_t *network;

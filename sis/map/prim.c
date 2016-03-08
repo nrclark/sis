@@ -45,7 +45,7 @@ prim_t **prim_p;
     *prim_p = prim;
     return prim != 0;
 }
-
+
 /*
  *  Map a network into a primitive pattern used for matching
  */
@@ -171,7 +171,7 @@ st_table *isomorphic_sons;
     return prim;
   }
 }
-
+
 static prim_edge_t *last_edge;
 
 static int
@@ -220,7 +220,7 @@ prim_t *prim;
 
   return retcode;
 }
-
+
 static void 
 reorder(node, prev, dir, arc_table, visited)
 node_t *node, *prev;
@@ -267,7 +267,7 @@ st_table *visited;
 	}
     }
 }
-
+
 /* Create a hash table to identify the arcs which have been visited */
 typedef struct arc_struct arc_t;
 struct arc_struct {
@@ -337,7 +337,7 @@ st_table *table;
     }
     st_free_table(table);
 }
-
+
 static prim_t *
 prim_alloc()
 {
@@ -393,7 +393,7 @@ prim_t *prim;
 	pn->binding = NIL(node_t);
     }
 }
-
+
 static void
 map_prim_dump_node(fp, pn)
 FILE *fp;

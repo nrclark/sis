@@ -33,7 +33,7 @@ typedef struct xcmd_info {		/* Info for command shell.	*/
 
 static Widget g_textout = NULL;
 static int caret_posn = 0;
-
+
 static String xcmd_do_special (p)
 String p;
 {
@@ -111,7 +111,7 @@ String str;
     /* This is necessary to scroll the bottom to be visible. */
     XawTextSetInsertionPoint (g_textout,32765);
 }
-
+
 static void print_file_list (w,filec)
 Widget w;
 xsis_filec* filec;
@@ -390,7 +390,7 @@ xcmd_info* info;
 	xsis_eat_line ();
     }
 }
-
+
 static XtActionsRec cmd_actions[] = {		/* Actions table. */
     {"EnterCmd", EnterCmd}
 };

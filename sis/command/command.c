@@ -64,7 +64,7 @@ char *command;
     } while (status == 0 && *commandp != '\0');
     return status;
 }
-
+
 static int
 com_dispatch(network, argc, argv)
 network_t **network;
@@ -117,7 +117,7 @@ char **argv;
     (void) signal(SIGINT, SIG_IGN);
     return status;
 }
-
+
 /*
  * Apply alias.
  * If perform a history substitution in expanding an alias, remove all the
@@ -222,7 +222,7 @@ int *loop;
     (void) fprintf(siserr, "error -- alias loop\n");
     return 1;
 }
-
+
 static char *
 split_line(command, argc, argv)
 char *command;
@@ -286,7 +286,7 @@ char ***argv;
     }
     return p;
 }
-
+
 static int
 check_shell_escape(p, status)
 char *p;

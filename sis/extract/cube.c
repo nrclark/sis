@@ -79,7 +79,7 @@ int use_best_subcube;
     array_free(col_cost);
     return total_value;
 }
-
+
 static void
 update_cube_literal_matrix(A, row_cost, col_cost, rect)
 sm_matrix *A;
@@ -127,7 +127,7 @@ rect_t *rect;
 	p1->user_word = (char *) value_cell;
     }
 }
-
+
 #if 0
 static int 
 int_cmp(x, y)
@@ -183,7 +183,7 @@ rect_t *rect;
     return bound;
 }
 #endif
-
+
 static int
 bound_rect_size_simple(co_rect, rect)
 sm_matrix *co_rect;
@@ -233,7 +233,7 @@ sm_matrix *A;
     gen_all_rectangles(A, best_subcube_helper, NIL(char));
     return best_rect;
 }
-
+
 /* ARGSUSED */
 static int
 best_subcube_factored_helper(co_rect, rect, state)
@@ -279,7 +279,7 @@ sm_matrix *A;
     gen_all_rectangles(A, best_subcube_factored_helper, NIL(char));
     return best_rect;
 }
-
+
 static rect_t *
 choose_subcube(A, row_cost, col_cost, option)
 sm_matrix *A;
@@ -308,7 +308,7 @@ int option;
 
     return rect;
 }
-
+
 static void
 clear_rect(A, rect)
 sm_matrix *A;

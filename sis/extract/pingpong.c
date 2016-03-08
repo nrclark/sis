@@ -74,7 +74,7 @@ rect_t *rect;
     }
     return best_row;
 }
-
+
 static int
 col_value(pcol, col_cost)
 sm_col *pcol;
@@ -136,7 +136,7 @@ rect_t *rect;
     }
     return best_col;
 }
-
+
 static int
 update_best(rect1, rect2, best_rect)
 rect_t *rect1, *rect2, **best_rect;
@@ -165,7 +165,7 @@ rect_t *rect1, *rect2, **best_rect;
     }
     return got_new_best;
 }
-
+
 static rect_t *
 ping_pong_improve(A, row_cost, col_cost, best_rect)
 sm_matrix *A;

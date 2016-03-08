@@ -44,7 +44,7 @@ Summary:
     mf_tail_of_edge()
     mf_head_of_edge()
     mf_is_edge_on_mincut()
-
+
 	ROUTINES TO FIND MINIMUM WEIGHT SEPARATOR SET IN BOOLEAN NETWORKS.
 array_t *
 cutset(network, weight_table)
@@ -103,7 +103,7 @@ st_table *name_node_table;
 	These are found by virtue of the name_node_table (this table was
 	returned by the routine mf_create_flow_network() described above)
 
-
+
     Primitive operations to build up your own maxflow problem instance.
     The nodes in the graph are REFERENCED BY NAME and the edge weights 
     MUST be positive integers. Note that a "source" and a "sink" node 
@@ -191,7 +191,7 @@ mf_cutset_t *cutset;
 	used to report the cutset.  Should be called once for each call
 	to "mf_get_cutset".
 
-
+
 void 
 maxflow( graph, verify)
 mf_graph_t *graph;
@@ -218,7 +218,7 @@ array_t **from_array, **to_array, **flow_array;
 	NOTE: The members of the arrays are not saved explicitly. Hence
 	the arrays should be used before freeing the cutset.
 
-
+
     Some routines to allow the user to dump the data structures to a
     file. Useful only for debugging.
 
@@ -244,7 +244,7 @@ mf_graph_t *graph;
 	After the maxflow() routine, prints the nodes and 
 	the edges, alongwith their flows, to outfile.
 
-
+
     The user is provided with various macros as described below
     to access the "mf_graph" data structure. These routines return
     pointers to existing data structures and so do not free any
@@ -280,7 +280,7 @@ char *name;
 	Returns the node corresponding to the name. If no such node
 	is present a NIL(char) is returned.
 
-
+
 The following routines are used to query the various entries in
 the data structures to retreive information about the vertices 
 and edges in the graph. 

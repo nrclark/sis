@@ -147,7 +147,7 @@ char *name;
     (void) strcat(name1, "}");
     return count == 0 ? name : name1;
 }
-
+
 int
 node_is_madeup_name(name, value)
 char *name;
@@ -201,7 +201,7 @@ network_t *network;
     }
     network_rehash_names(network, /* long */ 0, /* short */ 1);
 }
-
+
 void
 network_rehash_names(network, long_name, short_name)
 network_t *network;

@@ -85,7 +85,7 @@ sim_filter_t filter;
 
     return(new_dc);
 }
-
+
 /* attempt to find a partition (iteratively) of the form :
  *
  *     xy-
@@ -105,21 +105,21 @@ sm_matrix *Mfdc;
         (void) fdc_sm_bp_1(Mfdc, col);
     }
 }
-
+
 static void
 filter_disj_support(Mfdc)
 sm_matrix *Mfdc;
 {
     (void) fdc_sm_bp_2(Mfdc);
 }
-
+
 static void
 filter_size(Mfdc)
 sm_matrix *Mfdc;
 {
     (void) fdc_sm_bp_4(Mfdc);
 }
-
+
 static void
 filter_fdist(Mfdc, distance)
 sm_matrix *Mfdc;
@@ -127,7 +127,7 @@ int distance;
 {
     (void) fdc_sm_bp_6(Mfdc, distance);
 }
-
+
 static void
 filter_sdist(Mfdc, distance)
 sm_matrix *Mfdc;
@@ -196,7 +196,7 @@ node_t *nodepi;
     return(new_dc);
 }
 
-
+
 /* remove any cube from observability don't care set that has more than
  * "var" literals that are not in any cubes of the onset function.
  */
@@ -284,7 +284,7 @@ int    var;
     return(new_dc);
 }
 
-
+
 /* repeated distance 1 merge 
  *
  */

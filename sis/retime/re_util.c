@@ -88,7 +88,7 @@ st_table *node_to_id_table;
     }
 
 }
-
+
 /*
  * gets the load driven by the node.. we only consider the actual nodes
  * being driven since the latches may be replaced or moved by retiming
@@ -209,7 +209,7 @@ double load;
     return delay;
 }
 
-
+
 /*
  * In some cases the edges may be generated twice. So, take care to see if an
  * edge with the same properties exists. If so, then do nothing...
@@ -244,7 +244,7 @@ st_table *node_to_id_table;
 
     return edge;
 }
-
+
 array_t *
 re_graph_dfs(graph)
 re_graph *graph;
@@ -349,7 +349,7 @@ int weight;		/* Number of latches on current path */
     return 1;
 }
 
-
+
 re_node *
 retime_alloc_node()
 {
@@ -364,7 +364,7 @@ retime_alloc_node()
     return (re_no);
 }
 
-
+
 int
 re_retime_node(node, r)
 re_node *node;

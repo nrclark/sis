@@ -88,7 +88,7 @@ static char RCSid[] =
 
 
 
-
+
 /*
  *  MATRIX ALLOCATION
  *
@@ -295,7 +295,7 @@ MemoryError:
 
 
 
-
+
 /*
  *  ELEMENT ALLOCATION
  *
@@ -349,7 +349,7 @@ ElementPtr  pElement;
 
 
 
-
+
 /*
  *  ELEMENT ALLOCATION INITIALIZATION
  *
@@ -426,7 +426,7 @@ ElementPtr  pElement;
 
 
 
-
+
 /*
  *  FILL-IN ALLOCATION
  *
@@ -505,7 +505,7 @@ ElementPtr  pFillins;
 
 
 
-
+
 /*
  *  RECORD A MEMORY ALLOCATION
  *
@@ -561,7 +561,7 @@ char  *AllocatedPtr;
 
 
 
-
+
 /*
  *  ADD A BLOCK OF SLOTS TO ALLOCATION LIST     
  *
@@ -620,7 +620,7 @@ register  AllocationListPtr  ListPtr;
 
 
 
-
+
 /*
  *  MATRIX DEALLOCATION
  *
@@ -684,7 +684,7 @@ register  AllocationListPtr  ListPtr, NextListPtr;
 
 
 
-
+
 /*
  *  RETURN MATRIX ERROR STATUS
  *
@@ -720,7 +720,7 @@ char  *eMatrix;
 
 
 
-
+
 /*
  *  WHERE IS MATRIX SINGULAR
  *
@@ -759,7 +759,7 @@ MatrixPtr Matrix = (MatrixPtr)eMatrix;
 
 
 
-
+
 /*
  *  MATRIX SIZE
  *
@@ -803,7 +803,7 @@ MatrixPtr Matrix = (MatrixPtr)eMatrix;
 
 
 
-
+
 /*
  *  SET MATRIX COMPLEX OR REAL
  *
@@ -846,7 +846,7 @@ char  *eMatrix;
 
 
 
-
+
 /*
  *  ELEMENT OR FILL-IN COUNT
  *

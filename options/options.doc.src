@@ -108,7 +108,7 @@ char *optProgName;
 	These global variables are declared and set by the options
 	package.  See the description for `optGetOption'.
 
-
+
 /*
  *	The following functions give tool writers more control of
  *	the options package.  They are expected not to be used often.

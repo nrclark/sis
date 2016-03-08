@@ -36,7 +36,7 @@ static int speed_plot_use ()
     }
     return 1;
 }
-
+
 static void
 do_speed_plot(network, plot_name, thresh, path_flag, cutset_flag,
 		print_gate_name, model, dist, coeff, fast_mode,
@@ -158,7 +158,7 @@ int region_flag; /* Set the region to select the scope of transforms */
 
     com_graphics_close (gfp);
 }
-
+
 int
 com__speed_plot (network, argc, argv)
 network_t **network;

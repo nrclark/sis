@@ -46,7 +46,7 @@ node_t *node;
 
     node_free(func);
 }
-
+
 /*
  *  simulate a network
  */
@@ -91,7 +91,7 @@ array_t *in_value;		/* values for Primary Inputs */
 
     return po_value;
 }
-
+
 
 #ifdef SIS
 

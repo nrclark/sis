@@ -137,7 +137,7 @@ delay_model_t model;
     will get overwritten by a calls to the functions delay_node_pin(),
     delay_trace(). Hence to be safe, copy the data from the returned 
     structure into variables as soon as you call the get_pin_delay routine.
-
+
 delay_time_t
 delay_arrival_time(node)
 node_t *node;
@@ -252,7 +252,7 @@ delay_time_t *required;
 	node f, the routine will fill its value in the "required" field
 	and return 1.  Returns 0 if no required time is specified for f.
 
-
+
 The following routines couple the delay package with the clock package...
 They allow the user to set and get constraints at PI/PO nodes such that
 thay are relative to clock edges. These are meant for interface with
@@ -284,7 +284,7 @@ int flag;		/* BEFORE_CLOCK_EDGE or AFTER_CLOCK_EDGE */
     routine delay_set_parameter() using the appropriate parameters.
 
 
-
+
 network_t *
 delay_generate_decomposition(node, mode)
 node_t *node;
@@ -319,7 +319,7 @@ double load;
 	information on the network containing node, any of its fanins, or any
 	of its fanouts, should be treated as invalid following a call to
 	delay_compute_atime.
-
+
 
 int
 delay_incremental_trace(network)
@@ -340,7 +340,7 @@ network_t *network;
 	THIS ROUTINE IS NOT YET IMPLEMENTED.
 
 
-
+
 
 The remaining routines are specifically  designed for use by the library and
 i/o packages, specifically to set and read appropriate parameters on the input

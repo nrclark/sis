@@ -80,7 +80,7 @@ char **argv;
 
     return 0;
 }
-
+
 int
 com_add_inv(network, argc, argv)
 network_t **network;

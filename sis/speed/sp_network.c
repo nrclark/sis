@@ -82,7 +82,7 @@ int delay_flag;
 
     return network;
 }
-
+
 array_t *
 network_to_array(network)
 network_t *network;
@@ -111,7 +111,7 @@ network_t *network;
     array_free(nodevec);
     return array;
 }
-
+
 /*
  * For the nodes in the network, return an array of nodes that can be added to
  * another network (the internal pointers are consistent). If a hash_table

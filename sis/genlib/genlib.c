@@ -330,7 +330,7 @@ constraint_info_t *constraints; /* sequential support */
   FREE(latch);
   return 1;
 }
-
+
 static int
 check_internal_phase(tree, level)
 tree_node_t *tree;

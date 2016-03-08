@@ -86,7 +86,7 @@ prl_options_t *options;
       PerformLocalRetiming(network, options->verbose);
   }
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -158,7 +158,7 @@ static void RemoveRedundantLatches();
 static void remove_unused_pis();
 static void replace_latch_by_node();
 
-
+
 /* Where the real work is done.
  * We do the modifications directly on 'network'.
  * WARNING: seq_info->network is a COPY of 'network', not the same network.
@@ -365,7 +365,7 @@ array_t *input_names;
   }
   return var_to_pi_table;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -583,7 +583,7 @@ node_t *node;
     st_insert(table, (char *) node, (char *) distance);
     return distance;
 }
-
+
  /* 
   * Checks for gates that are fed only by latches
   * and move the latches forward.
@@ -734,7 +734,7 @@ st_table *table;
     }
 }
 
-
+
  /* EXTERNAL INTERACE */
 
 /*
@@ -905,7 +905,7 @@ array_t *var_names;
     network_free(network);
 }
 
-
+
 
 static int CanFlipInitialBit ARGS((network_t *, seq_info_t *, latch_t *));
 
@@ -967,7 +967,7 @@ prl_options_t *options;
     }
     Prl_SeqInfoFree(seq_info, options);
 }
-
+
 
 static bdd_t *ComputeFlippedLiteral ARGS((network_t *, seq_info_t *, latch_t *));
 static bdd_t *BddFindAlternateInit  ARGS((bdd_t *, bdd_t *, seq_info_t *));
@@ -1069,7 +1069,7 @@ seq_info_t *seq_info;
   bdd_free(tmp1);
   return tmp2;
 }
-
+
 /*
  *----------------------------------------------------------------------
  *
@@ -1149,7 +1149,7 @@ bdd_t *new_init_state;
   st_free_table(pi_to_var_table);
 }
 
-
+
 
 /*
  *----------------------------------------------------------------------

@@ -55,7 +55,7 @@ int num;		/* number of random assignment */
     phase_free(net_phase);
     phase_free(best_net_phase);
 }
-
+
 void
 phase_quick(network)
 network_t *network;
@@ -88,7 +88,7 @@ network_t *network;
     phase_record(network, net_phase);
     phase_free(net_phase);
 }
-
+
 static void
 greedy_down(net_phase)
 net_phase_t *net_phase;

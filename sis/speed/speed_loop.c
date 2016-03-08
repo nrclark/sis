@@ -250,7 +250,7 @@ free_saved_network:
     }
 }
 
-
+
 /*
  * For the original speedup (-f option), the script tries
  * the different values for the distance

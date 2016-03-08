@@ -324,7 +324,7 @@ XtPointer call_data;		/*i selection data.	*/
     NetPlotSelectData *data = (NetPlotSelectData*) call_data;
     xblif_relabel (info,data->select_name);
 }
-
+
 static xsis_cmds xblif_cmd_list[] = {
     { "replace",		xblif_replace },
     { "label",			xblif_label },

@@ -27,7 +27,7 @@ tree_node_type_t type;
 	tree->type = type;
     }
 }
-
+
 #define DUMP_TABLES
 
 
@@ -142,7 +142,7 @@ latch_info_t *latch;    /* sequential support */
 	gl_write_blif_tables(fp, tree, use_nor_gate);
     }
 }
-
+
 /* 
  *  make all binary-trees with 'n' leaves
  *  this is contained inside a permutation generator which tries all
@@ -205,7 +205,7 @@ int level;
     }
     return forms;
 }
-
+
 static void
 make_tree(list_in, n, state_in)
 char **list_in;
@@ -226,7 +226,7 @@ char *state_in;
     }
     array_free(forms);
 }
-
+
 static int 
 gl_nand_gate_forms_recur(tree, list, use_nor_gate)
 tree_node_t *tree;
@@ -312,7 +312,7 @@ int use_nor_gate;
 
     return n;
 }
-
+
 int 
 gl_nand_gate_forms(tree, list, use_nor_gate)
 tree_node_t *tree;

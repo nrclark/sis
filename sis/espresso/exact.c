@@ -124,7 +124,7 @@ int weighted;
     debug = debug_save;
     return newF;
 }
-
+
 static void
 dump_irredundant(E, Rt, Rp, table)
 pcover E, Rt, Rp;

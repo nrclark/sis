@@ -65,7 +65,7 @@ String s;
     return s;
 }
 
-
+
 /* ---------------------- Utilities for File Completion --------------------- */
 
 static int xsis_cmp_pathnames (s1,s2)

@@ -36,7 +36,7 @@ rect_t *rect;
     }
     return value;
 }
-
+
 static sm_col *
 find_max_col_intersection(A, col_cost, rect, row_values)
 sm_matrix *A;
@@ -93,7 +93,7 @@ int *row_values;
     FREE(col_values);
     return best_col;
 }
-
+
 /*
  *  greedy algorithm to find a 'good' rectangle which contains at least
  *  one rowumn of 'seed'

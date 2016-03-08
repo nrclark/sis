@@ -68,7 +68,7 @@ char *state;
 	sm_free(M1);
     }
 }
-
+
 static int
 has_full_column(M)
 sm_matrix *M;
@@ -99,7 +99,7 @@ char *state;
     }
     rect_free(rect);
 }
-
+
 rect_t *
 rect_alloc()
 {

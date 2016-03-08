@@ -364,7 +364,7 @@ char *x, *y;
 {
     return (int) x - (int) y;
 }
-
+
 int
 fast_avl_check_tree(tree)
 fast_avl_tree *tree;

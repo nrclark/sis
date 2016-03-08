@@ -13,7 +13,7 @@ static bdd_node *cproject();
  */
 #define CPROJ_OFFSET 1000000 
 
-
+
 /*
  *    bdd_cproject - the compatible projection function
  *    

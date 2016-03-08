@@ -47,7 +47,7 @@ int size;
     (void) network_sweep(network);
 }
 
-
+
 
 int
 split_node(network, node, size) 
@@ -135,7 +135,7 @@ int size;
     node_free(t_node);
     return (value);
 }
-
+
 
     
 static int
@@ -199,7 +199,7 @@ char *state;
     node_free(rem);
     node_free(cokernel);
 }
-
+
 
 static void
 find_best_div(div, best_div, size)
@@ -217,7 +217,7 @@ int size;
     node_free(div->divisor);
     FREE(div);
 }
-
+
 
 xln_infeasibility_measure(node, size)
   node_t *node;

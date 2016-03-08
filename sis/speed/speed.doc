@@ -71,7 +71,7 @@ delay_model_t model;
 	replaced by this node. The remaining nodes can be simply
 	added to the network.
 	Returns NIL(array_t) if there has been an error.
-
+
 /*
  Routines to improve circuit performance by adding buffers.
 */

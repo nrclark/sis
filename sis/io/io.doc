@@ -44,7 +44,7 @@ read_eqn_string(string)
 char *string;
 	Read eqntott-style equations from the string 'string'.  See above
 	for more information.
-
+
 void
 write_blif(fp, network, short_name, net_list)
 FILE *fp;
@@ -83,7 +83,7 @@ network_t *network;
 	Write a network in Oct bdnet format to the open file given by fp.
 	Returns 0 if unsuccessful; error_string() is set in this case.
 	Currently, this occurs only if the network is not mapped.  
-
+
 void
 read_register_filename(filename)
 char *filename;

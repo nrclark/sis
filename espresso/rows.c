@@ -154,7 +154,7 @@ int col;
 	return NIL(sm_element);
     }
 }
-
+
 /*
  *  return 1 if row p2 contains row p1; 0 otherwise
  */
@@ -271,7 +271,7 @@ sm_row *p1, *p2;
 	}
     }
 }
-
+
 int 
 sm_row_hash(prow, modulus)
 sm_row *prow;
@@ -286,7 +286,7 @@ int modulus;
     }
     return sum;
 }
-
+
 /*
  *  remove an element from a row vector (given a pointer to the element) 
  */

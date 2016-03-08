@@ -51,7 +51,7 @@ int		capacity;
 }
 
 
-
+
 /*
  *  get_maxflow()
  *	Get the value of maxflow for the given flow network
@@ -93,7 +93,7 @@ mf_graph_t	*graph;		/* pointer to graph */
 
 
 
-
+
 /*
  *  get_maxflow_edge()
  *	Get the maxflow network edge from the graph nodes
@@ -133,7 +133,7 @@ char		*name2;	/* name of the sink node of an edge */
 
 
 
-
+
 /*
  *  graph2network_node()
  *	Get the network node from the graph node
@@ -161,7 +161,7 @@ mf_node_t	*graph_node;	/* pointer to a node in the graph */
 	*ptr = '\0';
     return(network_find_node(network, buf));
 }
-
+
 /*
  *  print_fanin()
  *	Print the names of the fanin nodes of a given node
@@ -189,7 +189,7 @@ node_t	*node;
 }
 
 
-
+
 /*
  *  comp_ptr()
  *	Compare function for array_sort
@@ -220,7 +220,7 @@ char	*obj2;
 
 
 
-
+
 /*
  *  count_intsec_union()
  *	Count the cardinality of the intersection and union of two sets given
@@ -270,7 +270,7 @@ int		*num_intsec, *num_union;
 
 
 
-
+
 /*
  *  Print an entry in the table (debug use)
  *

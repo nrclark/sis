@@ -14,7 +14,7 @@
 #ifdef SIS
 #include "astg_int.h"
 #include "astg_core.h"
-
+
 /* ---------------------------- ASTG Daemons -------------------------------- */
 
 static astg_daemon_t *daemon_list = NULL;
@@ -83,7 +83,7 @@ void *value;
     /*	Set a slot to a new value. */
     stg->slots[(int)slot_id] = value;
 }
-
+
 /* --------------------------- Net Predicates ------------------------------- */
 
 extern astg_bool astg_is_marked_graph (stg)
@@ -195,7 +195,7 @@ astg_graph *g;
     }
     return rc;
 }
-
+
 /* --------------------------- Simple Cycles ------------------------- */
 
 static int astg_report_cycle (g)
@@ -278,7 +278,7 @@ astg_bool    subset;
     }
     return rc;
 }
-
+
 /* --------------------- Topological Ordering --------------------------- */
 
 static void astg_ts_dfs (g,v,num_p)
@@ -332,7 +332,7 @@ astg_bool subset;		/*i only process vertices marked with subset flag	*/
 
     return varray;
 }
-
+
 /* -------------------------- Connected Components --------------------- */
 
 static void astg_cc_dfs (v,vcomp,component_n)
@@ -432,7 +432,7 @@ astg_bool subset;	/*i only process vertices marked with subset flag	*/
     array_free (varray);
     return component_n;
 }
-
+
 /* --------------------------- Cycles -------------------------- */
 
 static int astg_find_cycles (v)
@@ -475,7 +475,7 @@ astg_graph *g;
     
     return (n_cycles != 0);
 }
-
+
 /* --------------------------- Misc. Stuff ------------------------------------ */
 
 static astg_bool astg_cp_dfs (v,dest)

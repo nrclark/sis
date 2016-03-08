@@ -84,7 +84,7 @@ init_seqbdd()
 end_seqbdd()
 {
 }
-
+
 /* verifies the equivalence of two finite state machine using implicit
  * state enumeration techniques. First the product machine is built.
  * It finds all the reachable states starting from the initial state
@@ -135,7 +135,7 @@ char **argv;
   seqbdd_print_usage("verify_fsm", "network2.blif");
   return 1;
 }
-
+
 
 /* Starting from initial states, finds all the reachable states.
  * Any state that is not reachable is a don't care because it
@@ -194,7 +194,7 @@ char **argv;
   seqbdd_print_usage("extract_seq_dc", "");
   return 1;
 }
-
+
 
 /* Generic routines to fill the option parameters
  */
@@ -357,7 +357,7 @@ char *filename;
   return result;
 }
 
-
+
 
 /* FROM NOW ON: INTERFACE CODE FOR THE PRL FILES
  * IMPLEMENTS THE FOLLOWING NEW COMMANDS:
@@ -428,7 +428,7 @@ char **argv;
     Prl_PrintUsage("env_seq_dc", "<network>");
     return 1;
 }
-
+
 
 /* 
  *----------------------------------------------------------------------
@@ -485,7 +485,7 @@ char **argv;
     Prl_PrintUsage("env_verify_fsm", "<check network> <env network>");
     return 1;
 }
-
+
 
  /* 'equiv_nets' performs the following optimization:
   * 1. for each net in the network, computes the BDD representing
@@ -522,7 +522,7 @@ char **argv;
   Prl_PrintUsage("remove_latches", "");
   return 1;
 }
-
+
 
 /* 1. Remove latches that are functionally deducible from the others.
  *    Latches whose equivalent combinational logic has too many inputs
@@ -572,7 +572,7 @@ char **argv;
     Prl_PrintUsage("equiv_nets", "");
     return 1;
 }
-
+
 
 /* 'latch_output' forces the listed external POs to be fed by a latch
  * by forward retiming of latches in the transitive fanin of the PO.
@@ -611,7 +611,7 @@ char **argv;
     (void) fprintf(siserr, "latch_output [-v verbosity_level] <node_list>\n");
     return 1;
 }
-
+
 /* 'remove_dep' forces the listed external POs not to depend on the given PI.
  * It is assumed that the dependency is structural, not logical.
  * This fact is checked with the -p option.
@@ -657,7 +657,7 @@ char **argv;
     (void) fprintf(siserr, "\t[-o] inserts a one instead of a zero\n");
     return 1;
 }
-
+
 
 /* 
  *----------------------------------------------------------------------
@@ -677,7 +677,7 @@ char **argv;
     Prl_RemoveDcNetwork(*network);
     return 0;
 }
-
+
 
 /*
  *----------------------------------------------------------------------

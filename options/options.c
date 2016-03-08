@@ -65,7 +65,7 @@ static int exitBad = 1;
 
 static char *expandOptChar();
 /*LINTLIBRARY*/
-
+
 optGetOption(argc, argv)
 int argc;
 char *argv[];
@@ -141,7 +141,7 @@ char *argv[];
     if (exitBad) optUsage();
     return('?');
 }
-
+
 void optInit(progName, options, rtnBadFlag)
 char *progName;
 optionStruct options[];
@@ -206,7 +206,7 @@ void optAddUnivOptions()
     }
 #endif
 }
-
+
 static int doUnivOption(optChar)
 int optChar;
 {
@@ -269,7 +269,7 @@ static int parseMMoptions()
     return(1);
 }
 #endif
-
+
 void optUsage()
 {
     (void) fprintf(stderr, "%s", optUsageString());
@@ -291,7 +291,7 @@ char *optUsageString()
 
     return(usageString);
 }
-
+
 #define START_OPTION_GROUP()	if (inGroup++ == 0) {			\
 				    formatString(" [-");		\
 				}
@@ -343,7 +343,7 @@ usageSummary()
     }
     FINISH_OPTION_GROUP();
 }
-
+
 static void
 usageDetailed()
 {
@@ -379,7 +379,7 @@ usageDetailed()
 	}
     }
 }
-
+
 static int curColumn = 0;
 static int indent;
 static char lineBuffer[LINEWIDTH];
@@ -406,7 +406,7 @@ formatFlush()
     usageString[usageStrlen] = '\0';
     curColumn = 0;
 }
-
+
 static void
 formatString(string)
 char *string;

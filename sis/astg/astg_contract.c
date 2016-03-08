@@ -40,7 +40,7 @@ astg_place *p;
     astg_foreach_out_edge (p,gen,e) printf(" %s",astg_v_name(astg_head(e)));
     printf("\n");
 }
-
+
 /* ----------------------------- Check Contract ----------------------------- *\
 
    This implements the checks from Chu's dissertation to see if it is legal
@@ -254,7 +254,7 @@ astg_bool   keep_fc;
     dbg(2,if (!can_do_it) msg("...cannot contract signal %s.\n",sig_p->name));
     return can_do_it;
 }
-
+
 /* ------------------------------ Eliminate Signal -------------------------- */
 
 static astg_bool pure_place_simple (p)
@@ -390,7 +390,7 @@ astg_signal *sig_p;
     DLL_REMOVE (sig_p,stg->sig_list,next,prev);
     /* can't free it now, since iterator is in use */
 }
-
+
 /* ---------------------- Net Contraction Interface ------------------------- */
 
 astg_graph *astg_contract (stg,outsig,keep_fc)

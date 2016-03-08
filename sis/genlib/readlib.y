@@ -60,7 +60,7 @@ extern int library_setup_file(FILE *, char *);
 %token GATE PIN SEMI ASSIGN RPAREN
 %token LATCH CONTROL CONSTRAINT SEQ
 %start hack
-
+
 %%
 hack	:	gates
 	|	function

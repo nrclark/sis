@@ -62,7 +62,7 @@ node_t **p, **q, **r;
     node_minimum_base(*q);
     node_minimum_base(*r);
 }
-
+
 static node_t *
 fast_cofactor(node, fanin, phase)
 node_t *node, *fanin;
@@ -111,7 +111,7 @@ int phase;
     node_minimum_base(r);
     return r;
 }
-
+
 node_t *
 node_cofactor(node, cube)
 node_t *node, *cube;

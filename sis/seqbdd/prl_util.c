@@ -36,7 +36,7 @@ network_t *network;
       network->dc_network = NIL(network_t);
   }
 }
-
+
 
 /* 
  *----------------------------------------------------------------------
@@ -194,7 +194,7 @@ node_t *node;
     }
     return node->copy;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -291,7 +291,7 @@ array_t *bdd_array;
   }
   array_free(bdd_array);
 }
-
+
 
  /*
   *----------------------------------------------------------------------
@@ -335,7 +335,7 @@ network_t *network;
     array_free(nodes_to_be_removed);
     network_sweep(network->dc_network);
 }
-
+
  /*
   *----------------------------------------------------------------------
   *
@@ -362,7 +362,7 @@ char *comment;
     (void) fprintf(misout, "*** [elapsed(%2.1f),total(%2.1f)] ***\n", elapsed, total);
     if (comment != NIL(char)) (void) fprintf(misout, "%s...\n", comment);
 }
-
+
 
 static bdd_t *array_bdd_and ARGS((bdd_manager *, array_t *));
 
@@ -416,7 +416,7 @@ array_t *array;
     return result;
 }
 
-
+
 
 static bdd_t *GetOneMinterm 	 ARGS((bdd_manager *, bdd_t *, st_table *));
 static void   StoreVarIdsInTable ARGS((array_t *, st_table *));

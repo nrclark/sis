@@ -37,7 +37,7 @@ int n;
     }
     return sum;
 }
-
+
 static int
 hack_adjust(n, s, p)
 int n, s, p;
@@ -105,7 +105,7 @@ int n, s, p;
     }
     return sum;
 }
-
+
 int 
 gl_number_of_gates(n, s, p)
 {

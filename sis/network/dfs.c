@@ -138,7 +138,7 @@ network_t *network;
   array_free(roots);
   return node_vec;
 }
-
+
 array_t *
 network_tfi(node, level)
 node_t *node;
@@ -185,7 +185,7 @@ int level;
     st_free_table(visited);
     return node_vec;
 }
-
+
 static int 
 network_dfs_recur(node, node_vec, visited, dir, level)
 node_t *node;

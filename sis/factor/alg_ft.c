@@ -43,7 +43,7 @@ node_t *(*gen_factor)();
 	node_free(ck);
     }
 }
-
+
 static void
 factor_special(f, ck, gen_factor)
 node_t *f, *ck;
@@ -70,7 +70,7 @@ node_t *(*gen_factor)();
     factor_recur(p, gen_factor);
 
 }
-
+
 static void
 factor_general(f, ck, gen_factor)
 node_t *f, *ck; 

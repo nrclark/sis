@@ -60,7 +60,7 @@ static XtResource app_resources[] = {
       offset(debug), XtRImmediate, (XtPointer) False }
 #undef offset
 };
-
+
 static String xsis_fallback_resources[] = { 
 
     "XSis.geometry:			820x300",
@@ -132,7 +132,7 @@ static String xsis_fallback_resources[] = {
     "XSis*Dialog*label.resizable:	TRUE",
 
 NULL };
-
+
 void xsis_io_error (message)
 char *message;
 {
@@ -180,7 +180,7 @@ char** argv;
 
     return sis_path;
 }
-
+
 /* It would be ideal if I/O on the pty connection to the sis child could be
    done using stdio calls after doing an fdopen(3S) on the pty controller
    file descriptor.  Unfortunately the input functions (fgetc, fgets, ...)
@@ -307,7 +307,7 @@ int drop_nl;
     if (p == buffer && c == EOF) return NULL;
     return buffer;
 }
-
+
 void xsis_dump_string (message,s)
 String message;
 String s;
@@ -364,7 +364,7 @@ int special;
 	xsis_perror("writeln");
     }
 }
-
+
 /* ---------------------------- A Simple Popup ------------------------------ */
 
 static void DestroyPopupPrompt (widget,client_data,call_data)
@@ -416,7 +416,7 @@ String message;
 
     XtPopup (popup, XtGrabExclusive);
 }
-
+
 void xsis_close_window (w,closure,data)
 Widget w;
 XtPointer closure;
@@ -460,7 +460,7 @@ static void xsis_cleanup ()
 	xsis_world.cmd_timer_active = False;
     }
 }
-
+
 /* ---------------------------- Input from sis child ----------------------- *\
 
    Reading from the sis pty is handled with an Xt input proc.  However, to
@@ -732,7 +732,7 @@ XtInputId* id;
 	xsis_world.cmd_timer_active = True;
     }
 }
-
+
 static void xsis_del_info (data)
 lsGeneric data;
 {
@@ -878,7 +878,7 @@ XtPointer closure;
 	xsis_set_flag (item,value);
     }
 }
-
+
 static xsis_cmds xsis_cmd_list[] = {
 
     { "set",			xsis_do_set },

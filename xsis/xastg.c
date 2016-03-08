@@ -171,7 +171,7 @@ XtPointer call_data;		/*i selection data.	*/
     NetPlotSelectData *data = (NetPlotSelectData*) call_data;
     XtVaSetValues (info->label,XtNlabel,data->select_name,NULL);
 }
-
+
 static xsis_cmds xastg_cmd_list[] = {
     { "highlight",		xastg_hilite },
     { NULL }

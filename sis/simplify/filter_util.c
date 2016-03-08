@@ -118,7 +118,7 @@ sm_col *ex_col;
     else
 	(void) bd_comp_exact(M, ex_col); /* recurse */
 }
-
+
 /* 
  * heuristic filter - remove the dont care cubes that do not share any 
  * variables with the on set. this is an approximation and may delete 
@@ -178,7 +178,7 @@ sm_matrix *M;
     if (simp_debug)
         (void) fprintf(sisout, "\n");
 }
-
+
 /* 
  * heuristic filter - remove the smaller dont care cubes that have some part
  * of their support outside the on set. this is an approximation and may delete 
@@ -242,7 +242,7 @@ sm_matrix *M;
     if (simp_debug)
         (void) fprintf(sisout, "\n");
 }
-
+
 /* 
  * heuristic filter - remove the dont care cubes that have more than
  * a certain distance from any cube in the on set
@@ -305,7 +305,7 @@ int distance;
         }
     }
 }
-
+
 /* 
  * heuristic filter - remove the dont care cubes that have more than
  * a certain distance from any cube in the on set
@@ -366,7 +366,7 @@ int distance;
         }
     }
 }
-
+
 array_t *
 sm_col_count_init(size)
 int size;
@@ -409,7 +409,7 @@ array_t *chosen;
         return(max);
     }
 }
-
+
 /* return true if distance between "p" and "r" is not greater than "distance"
  * distance is measured a little differently than the standard definition
  * (see espresso book for example). for the on set support distance is the

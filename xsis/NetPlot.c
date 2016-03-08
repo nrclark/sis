@@ -47,7 +47,7 @@
 #define x_trans(xd,x)	ceil(((x)-(xd)->xt_user)*(xd)->x_scale)
 #define y_trans(xd,y)	ceil(((y)-(xd)->yt_user)*(xd)->y_scale)
 
-
+
 /* --------------------------- float Rectangles ----------------------------- */
 
 static void np_clear_rect (r)
@@ -81,7 +81,7 @@ XRectangle* r2;
 	dest->height = max_y - dest->y;
     }
 }
-
+
 /* --------------------------- User Coordinates ----------------------------- */
 
 static float winToUserX (view,win_x)
@@ -101,7 +101,7 @@ int win_y;
     y = (y/view->y_scale) + view->yt_user;
     return y;
 }
-
+
 /* ---------------------------- Implementation ------------------------------ */
 
 static int np_numlines (label)
@@ -309,7 +309,7 @@ np_action action;
 
     return result;
 }
-
+
 static Boolean np_sect_rect (r1,r2)
 XRectangle* r1;
 XRectangle* r2;
@@ -403,7 +403,7 @@ np_arc* arc;
     lsDelValue (arc->widget->netPlot.arcs, (lsGeneric) arc);
     xfree (arc);
 }
-
+
 /* ----------------------- netplot node stuff ------------------------------- */
 
 np_node* np_create_node2 (widget,name)
@@ -509,7 +509,7 @@ np_shape shape;
     /*  Change the node shape. */
     node->shape = shape;
 }
-
+
 /* ----------------------- Generic Node Placement --------------------------- *\
 
    Assign values to (node->x,node->y) for each node to place it on an
@@ -600,7 +600,7 @@ NetPlotPart *graph;
         if (num_fanins(node) == 0) np_check_uniform (node);
     }
 }
-
+
 /* -------------------------------------------------------------------------- *\
    Here's the real stuff.  Assign relative positions of the nodes in all
    the levels in the graph.  Assume the order of column 0 is
@@ -840,7 +840,7 @@ NetPlotPart* graph;
  */
     }
 }
-
+
 /* ------------------------ Map Grid to User -------------------------------- *\
 
    After a generic placement algorithm on an arbitrary grid, convert the
@@ -948,7 +948,7 @@ Widget w;
 	node->bounds.y = y_trans(xd,node->y) - node->bounds.height/2;
     }
 }
-
+
 /* --------------------------- Low level X Stuff ---------------------------- */
 
 static void np_top_center (node,tc)
@@ -1147,7 +1147,7 @@ np_arc *arc;
     }
     return arc->from;
 }
-
+
 /* -------------------------- Highlighting ---------------------------------- */
 
 static void np_do_shape (node,function,action)
@@ -1251,7 +1251,7 @@ String label;
 	np_highlight_arc (arc,False);
     }
 }
-
+
 void np_set_title (w,s)
 Widget w;
 char *s;
@@ -1357,7 +1357,7 @@ int clear;
 	}
     }
 }
-
+
 /* ------------------------------- Methods ---------------------------------- */
 
 static void NetPlotInitialize (treq,tnew,arg_list,n_arg)
@@ -1537,7 +1537,7 @@ XtWidgetGeometry *proposed, *reply;
 
     return XtGeometryAlmost;
 }
-
+
 /* ------------------------------- Actions ---------------------------------- */
 
 static np_node *hit_test (graph,bx,by)
@@ -1750,7 +1750,7 @@ Cardinal* n_param;	/*i Note that all params are optional.	*/
 	xsis_execute (params[1],False);
     }
 }
-
+
 /* ----------------------------- Resource List ------------------------------ */
 
 static XtResource resources[] = {
@@ -1797,7 +1797,7 @@ static char translations[] = "\
 <Btn3Motion>:		TrackNode()	\n\
 <Btn3Up>:		MoveNode()	\n\
 ";
-
+
 /* ------------------------ Class Record Initialization --------------------- */
 
 static NetPlotClassRec netPlotClassRec = {

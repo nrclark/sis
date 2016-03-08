@@ -65,7 +65,7 @@ Summary:
 	node_print_negative()
 
 	node_register_daemon()
-
+
 node_t *
 node_alloc()
 	Allocate a new node.
@@ -114,7 +114,7 @@ node_t *node;
 	number of negative phase literals for input 'j'.  Typically
 	this array is accessed from with a fanin generation loop.  The
 	array should be freed when you no longer need it.
-
+
 /*  Basic node computation routines */
 
 The basic operations are supported.  The routines all return a new node
@@ -258,7 +258,7 @@ node_t *f, *g;
 	the negative form, NEG_UNATE is returned.  If used in both
 	phases, BINATE is returned.
 
-
+
 /* higher level constructs */
 
 These routines are built conceptually on-top of the previous basic
@@ -356,7 +356,7 @@ node_cofactor(f, g)
 node_t *f, *g;
 	Forms the Shannon cofactor of f with respect to g.  This is
 	defined only when g is a single cube.
-
+
 /* Generators to traverse the graph structure of a network */
 
 foreach_fanin(node, i, fanin)
@@ -394,7 +394,7 @@ its fanin.  This will cause a run-time error.
 Only a node which is a network (i.e., using network_add_node()) has a
 fanout defined.  An attempt to generate the fanout of a node which is not
 in a network will cause a run-time error.
-
+
 /*  Looking at the Sum-of-products function stored at a node */
 
 node_cube_t
@@ -441,7 +441,7 @@ Typical use of these functions:
 		}
 	    }
 	}
-
+
 /*  Looking at the fanin and fanouts for a node */
 
 
@@ -479,7 +479,7 @@ node_t *node;
 node_t *fanin;
 	Return the index of fanin as an input to node, or -1 if fanin
 	is not an input to node.
-
+
 char *
 node_name(node)
 node_t *node;
@@ -523,7 +523,7 @@ node_t *node;
 	"f = a' + b' + c'".  Appends a trailing newline.  Uses node_name(), 
 	and hence depends on the current setting of long names versus 
 	short names.
-
+
 /* node daemons */
 
 Many routines need to store information along with a node.  Currently,
@@ -564,7 +564,7 @@ the package is released and installed, the single change of FACTOR_SLOT to
 e.g., `factored' (along with a corresponding minor change in the node package)
 is all that is needed to allow the factor package to have its own slot 
 in the node structure.
-
+
 Example:
 
 The routines factor_alloc, factor_free, factor_dup, and factor_invalid
@@ -615,7 +615,7 @@ probably look something like:
 	    FACTOR(node)->tree = 0;
 	    FACTOR(node)->this_or_that = 0;
 	}
-
+
 node_daemon_type_t {
     DAEMON_ALLOC, DAEMON_FREE, DAEMON_DUP, DAEMON_INVALID
 };

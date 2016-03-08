@@ -72,7 +72,7 @@ static char RCSid[] =
 
 
 
-
+
 /*
  *  SOLVE MATRIX EQUATION
  *
@@ -219,7 +219,7 @@ void SolveComplexMatrix();
 
 
 
-
+
 #if spCOMPLEX
 /*
  *  SOLVE COMPLEX MATRIX EQUATION
@@ -389,7 +389,7 @@ ComplexNumber  Temp;
 
 
 
-
+
 #if TRANSPOSE
 /*
  *  SOLVE TRANSPOSED MATRIX EQUATION
@@ -536,7 +536,7 @@ void SolveComplexTransposedMatrix();
 
 
 
-
+
 #if TRANSPOSE AND spCOMPLEX
 /*
  *  SOLVE COMPLEX TRANSPOSED MATRIX EQUATION

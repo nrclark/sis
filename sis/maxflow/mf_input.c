@@ -271,7 +271,7 @@ mfnptr node;
     node->out_edge = etemp;
 }/* end of reallocate_out_edge */
 
-
+
 char *
 MF_calloc(a, b)
 int a, b;

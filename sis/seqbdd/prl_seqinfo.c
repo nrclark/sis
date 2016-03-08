@@ -70,7 +70,7 @@ prl_options_t *options;
 
   return seq_info;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -100,7 +100,7 @@ seq_info_t *seq_info;
     }
   }
 }
-
+
 
 static void seq_register_pis_as_bdd_inputs ARGS((seq_info_t *, network_t *));
 
@@ -176,7 +176,7 @@ network_t *dc_network;
 	st_insert(seq_info->leaves, (char *) dc_input, (char *) var_index);
     }
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -230,7 +230,7 @@ seq_info_t *seq_info;
 
   seq_info->init_state_fn = result;
 }
-
+
 
 /*
  *----------------------------------------------------------------------
@@ -277,7 +277,7 @@ prl_options_t *options;
   
   FREE(seq_info);
 }
-
+
 
 /*
  *----------------------------------------------------------------------

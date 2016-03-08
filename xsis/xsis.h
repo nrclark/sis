@@ -57,7 +57,7 @@
 #define XSIS_KILLED		(-2)
 
 #define xvwidget	XtVaCreateManagedWidget
-
+
 /* Structures for handling file lists and file completion. */
 
 typedef struct xsis_filec {
@@ -79,7 +79,7 @@ int xsis_string_array_prefix ARGS((array_t *));
 xsis_filec *xsis_file_completion ARGS((String, int));
 String xsis_file_type ARGS((xsis_filec *, int));
 void xsis_free_filec ARGS((xsis_filec *));
-
+
 /* Window Information.
 
    xsis manages multiple top level shells: a main window for sis commands

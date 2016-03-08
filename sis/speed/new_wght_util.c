@@ -742,7 +742,7 @@ double crit_slack;
     return 0;
 }
 
-
+
  /*
   * Routine to compute the shortest path (Modification on the routine
   * mvbr_shortestpath() by Yoshinori Watanabe (in GYOCRO). All the comments
@@ -898,7 +898,7 @@ int *cost;
 
     return solution_array;
 }
-
+
 
 /* 
  * nsp_dfs_bdd() recursively performs a depth first search over nodes
@@ -1029,7 +1029,7 @@ bdd_t *f;
 }
 
 
-
+
 typedef struct valid_data_struct {
     int select;		    /* set if selection increases the epsilon */
     double saving;	    /* Amount of saving desired at this node */

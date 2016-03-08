@@ -39,7 +39,7 @@ char **argv;
     array_free(node_vec);
     return 0;
 }
-
+
 com_sim(network, argc, argv)
 network_t **network;
 int argc;
@@ -93,7 +93,7 @@ usage:
     (void) fprintf(miserr, "    -m exact-lits\tminimize using exact (lits)\n");
     return 1;
 }
-
+
 com_cof(network, argc, argv)
 network_t **network;
 int argc;
@@ -120,7 +120,7 @@ char **argv;
     array_free(node_vec);
     return 0;
 }
-
+
 com_wd(network, argc, argv)
 network_t **network;
 int argc;
@@ -156,7 +156,7 @@ usage:
     (void) fprintf(miserr, "    -c\t\talso use the complement of n2\n");
     return 1;
 }
-
+
 com_scc(network, argc, argv)
 network_t **network;
 int argc;
@@ -181,7 +181,7 @@ usage:
     (void) fprintf(miserr, "usage: scc n1 n2 ...\n");
     return 1;
 }
-
+
 com_invert(network, argc, argv)
 network_t **network;
 int argc;
@@ -206,7 +206,7 @@ usage:
     (void) fprintf(miserr, "usage: invert n1 n2 ...\n");
     return 1;
 }
-
+
 init_node()
 {
     com_add_command("wd", com_wd, 1);

@@ -72,7 +72,7 @@ int nfanin;
 }
 
 #endif
-
+
 static div_cube_t *
 divide_setup_divisor(sf)
 pset_family sf;
@@ -112,7 +112,7 @@ register pset divisor_support;
     }
     return head;
 }
-
+
 static div_cube_t *
 divide_find_classes(list, fullset)
 div_cube_t **list;
@@ -147,7 +147,7 @@ register pset fullset;
     }
     return quotient;
 }
-
+
 void
 divide_finale(list, quotient, divisor_ncube, q_sf, r_sf)
 div_cube_t *list, *quotient;
@@ -199,7 +199,7 @@ pset_family q_sf, r_sf;
 	FREE(p);
     }
 }
-
+
 static int
 list_compare(p, q)
 div_cube_t *p, *q;
@@ -213,7 +213,7 @@ div_cube_t *p, *q;
 	return x;
     }
 }
-
+
 /*
  *  divide f/g giving quotient and (optional) remainder.  Assumes that
  *  g is already known to be a single cube (but not a single literal).
@@ -268,7 +268,7 @@ node_t **r_node;
     set_free(fullset);
     return q_node;
 }
-
+
 /*
  *  divide f/g giving quotient and (optional) remainder.  Assumes that
  *  g is already known to be a single literal.
@@ -322,7 +322,7 @@ node_t **r_node;
     node_minimum_base(q_node);
     return q_node;
 }
-
+
 /*
  * node_div -- compute f/g returning quotient in r and remainder in q 
  *

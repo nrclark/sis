@@ -95,7 +95,7 @@ pcube a, b;
     }
     return r;
 }
-
+
 pcover make_disjoint(A)
 pcover A;
 {
@@ -205,7 +205,7 @@ pcube a, b;
     }
     return r;
 }
-
+
 /* cv_intersect -- form the intersection of two covers */
 
 #define MAGIC 500               /* save 500 cubes before containment */

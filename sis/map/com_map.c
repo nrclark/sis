@@ -655,7 +655,7 @@ int print_pins;
     (void) fprintf(sisout, "\n");
   }
 }
-
+
 /* ARGSUSED */
 static int
 com_print_gate(network, argc, argv)
@@ -701,7 +701,7 @@ char **argv;
   (void) fprintf(siserr, "usage: print_gate [-ps] n1 n2 ...\n");
   return 1;
 }
-
+
 /* ARGSUSED */
 static int
 com_treesize(network, argc, argv)
@@ -718,7 +718,7 @@ char **argv;
   (void) fprintf(siserr, "usage: _treesize\n");
   return 1;
 }
-
+
 /* ARGSUSED */
 static int
 com_eat_buffer(network, argc, argv)
@@ -740,7 +740,7 @@ char **argv;
   (void) fprintf(siserr, "usage: _eat_buffer\n");
   return 1;
 }
-
+
 /* ARGSUSED */
 static int
 com_premap(network, argc, argv)
@@ -765,7 +765,7 @@ char **argv;
   }
   return 0;
 }
-
+
 static int
 com_map_addinv(network, argc, argv)
 network_t **network;
@@ -794,7 +794,7 @@ char **argv;
   (void) fprintf(siserr, "usage: _addinv [-p]\n");
   return 1;
 }
-
+
 /* ARGSUSED */
 static int
 com_map_reminv(network, argc, argv)
@@ -815,7 +815,7 @@ char **argv;
   }
   return 0;
 }
-
+
 /* ARGSUSED */
 static int
 com_buffer(network, argc, argv)
@@ -834,7 +834,7 @@ char **argv;
   buffer_inputs(*network, lib_get_library());
   return 0;
 }
-
+
 /* ARGSUSED */
 static int
 com_dump_patterns(network, argc, argv)
@@ -850,7 +850,7 @@ char **argv;
   lib_dump(sisout, lib_get_library(), /* detail */ 1);
   return 0;
 }
-
+
 /* ARGSUSED */
 static int
 com_print_library(network, argc, argv)

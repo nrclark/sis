@@ -315,7 +315,7 @@ int short_flag;
     io_write_func(fp, node, short_flag, 1);
 }
 
-
+
 static int colnum;
 static char *io_break_string = 0;
 static int io_break_column = 32000;

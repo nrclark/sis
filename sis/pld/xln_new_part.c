@@ -364,4 +364,4 @@ inp = node_num_fanin(node1)-1;
    }
 return(inp);
 }
- 	
+ 	

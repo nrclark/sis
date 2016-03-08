@@ -88,7 +88,7 @@ node_t *f, *g;
 
     return 1;
 }
-
+
 static void
 handle_constant(f, index, bad_value)
 node_t *f;

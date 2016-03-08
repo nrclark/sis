@@ -85,7 +85,7 @@ given after the description of the routine. The fields are as follows:
                              created (set it to 1 for now) */
   } XLN_MOVE_STRUCT;
 
-
+
 
 decomposition
 --------------
@@ -241,7 +241,7 @@ xln_init_param_t *init_param;
   for details on MAX_FANIN, MAX_COMMON_FANIN, MAX_UNION_FANIN.
 
 
-
+
 
 block count minimization
 -------------------------
@@ -350,7 +350,7 @@ int roth_karp_flag;
   Must specify support, collapse_input_limit. If support = 2, nothing is
   done. 
 
-
+
 delay optimization
 -------------------
 
@@ -381,7 +381,7 @@ xln_init_param_t *init_param;
   `network' changes if collapsing is done.
 
   
-
+
 
 ACTEL
 
@@ -493,7 +493,7 @@ st_table *cost_table;
 	cost_table. This space was allocated by the act_map_network()
  	routine. 
 
-	  
+	  
 
 Some utility routines
 ---------------------

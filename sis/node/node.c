@@ -69,7 +69,7 @@ node_t *f, *g;
     node_minimum_base(r);
     return r;
 }
-
+
 /*
  *  node_or -- form f + g
  */
@@ -124,7 +124,7 @@ node_t *f, *g;
     node_minimum_base(r);
     return r;
 }
-
+
 /*
  *  node_not -- form NOT f
  */
@@ -149,7 +149,7 @@ node_t *f;
     node_minimum_base(r);
     return r;
 }
-
+
 /*
  *  node_xor -- form f <xor> g
  */
@@ -171,7 +171,7 @@ node_t *f, *g;
     node_free(t1);
     return r;
 }
-
+
 /*
  *  node_xnor -- form f <xnor> g    (also known as eqv ...)
  */
@@ -193,7 +193,7 @@ node_t *f, *g;
     node_free(t1);
     return r;
 }
-
+
 node_t *
 node_literal(f, phase)
 node_t *f;
@@ -215,7 +215,7 @@ int phase;
     r->is_scc_minimal =1;	/* obviously ... */
     return r;
 }
-
+
 node_t *
 node_constant(phase)
 int phase;
@@ -238,7 +238,7 @@ int phase;
     r->is_scc_minimal = 1;	/* obviously ... */
     return r;
 }
-
+
 node_t *
 node_largest_cube_divisor(f)
 node_t *f;
@@ -265,7 +265,7 @@ node_t *f;
     node_minimum_base(r);
     return r;
 }
-
+
 /*
  *  node_contains -- see if node f contains node g
  */
@@ -304,7 +304,7 @@ node_t *f, *g;
     sf_free(newg);
     return contains;
 }
-
+
 /*
  *  node_equal -- see if node f and node g are Boolean equal
  */
@@ -315,7 +315,7 @@ node_t *f, *g;
 {
     return node_contains(f, g) && node_contains(g, f);
 }
-
+
 /*
  *  node_equal_by_name -- see if node1 == node2 (boolean sense)
  */
@@ -377,7 +377,7 @@ exit_free1:
     sf_free(newg);
     return eql;
 }
-
+
 node_t *
 node_sort_for_printing(f)
 node_t *f;
@@ -411,7 +411,7 @@ node_t *f;
     node_free(g);
     return r;
 }
-
+
 node_function_t
 node_function(node)
 node_t *node;
@@ -470,7 +470,7 @@ node_t *node;
   return(node->type);
 }
 
-
+
 int
 node_simplify_replace(F, D, mode)
 node_t *F, *D;
@@ -487,7 +487,7 @@ node_sim_type_t mode;
 	return 0;
     }
 }
-
+
 node_t *
 node_simplify(node_F, node_D, mode)
 node_t *node_F, *node_D;
@@ -561,7 +561,7 @@ node_sim_type_t mode;
     sf_free(newd);
     return r;
 }
-
+
 void
 node_scc(node)
 node_t *node;
@@ -570,7 +570,7 @@ node_t *node;
     node->is_dup_free = 0;	/* be pessimistic */
     node_minimum_base(node);
 }
-
+
 int
 node_num_literal(node)
 node_t *node;
@@ -608,7 +608,7 @@ node_t *node;
     }
     return node->F->count;
 }
-
+
 int *
 node_literal_count(node)
 node_t *node;
@@ -638,7 +638,7 @@ node_t *node;
 
     return count; 
 }
-
+
 void
 node_complement(node)
 node_t *node;
@@ -661,7 +661,7 @@ node_t *node;
 	node->R = sf_contain(complement(cube1list(node->F)));
     }
 }
-
+
 /* repeated distance 1 merge */
 void
 node_d1merge(f)
@@ -684,7 +684,7 @@ node_t *f;
     f->is_scc_minimal = 1;
     node_minimum_base(f);
 }
-
+
 int
 node_error(code)
 int code;

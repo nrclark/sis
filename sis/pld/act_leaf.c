@@ -90,7 +90,7 @@ sm_matrix *F;
     }
     return act;
 }
-
+
 
 /* checks for a row of 2's. returns 1 if true else 0*/ 
 static int 
@@ -113,7 +113,7 @@ sm_matrix *F;
     return 0;
 }
 
-
+
 
 
 

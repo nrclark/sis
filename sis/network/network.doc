@@ -103,7 +103,7 @@ network_t *network;
 	of a cycle, error_string() (see error.doc) can be used to
 	retrieve a description of the nodes on the first cycle 
 	encountered.
-
+
 /* Generators */
 
 
@@ -142,7 +142,7 @@ node_t *po;
 
     In general, the generator operation is not well-defined if any attempt
     is made to add a node to the network during the generation loop.
-
+
 void
 network_add_node(network, node)
 network_t *network;
@@ -203,7 +203,7 @@ char *name;
 	name_mode variable (i.e., whether to look at the long names,
 	or the short names).
 	
-
+
 
 void
 network_change_node_type(network, node, new_type)
@@ -265,7 +265,7 @@ network_t *network;
 	(The nodes are ordered such that every node appears somewhere after
 	all of its transitive fanout nodes.)
 
-
+
 
 array_t *
 network_tfi(node, level)
@@ -333,7 +333,7 @@ pPLA PLA;
 	multiple-output PLA (i.e., if it contains any multiple-valued
 	variables), then NIL(network_t) is returned.
 
-
+
 
 network_t *
 network_espresso(network)
@@ -342,7 +342,7 @@ network_t *network;
 	Uses pla_to_network() to create a NOR-NOR network.  The original
 	network is unaffected.
 
-
+
 
 void
 network_reset_long_name(network)

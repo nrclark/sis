@@ -269,7 +269,7 @@ done:
 
     return F;
 }
-
+
 /*
  * Do a single pass consisting of essential, reduce, expand, irredundant.
  * The purpose is to do some reasonable amount of optimization in a short time.
@@ -323,7 +323,7 @@ pcover F, D1;
     return F;
 
 }
-
+
 /*
  *  unate_compl
  */
@@ -509,7 +509,7 @@ pset restricted;
 
     return best_var;
 }
-
+
 /*
  *  abs_covered -- after selecting a new column for the selected set,
  *  create a new matrix which is only those rows which are still uncovered
@@ -532,7 +532,7 @@ register int pick;
 	}
     return Aprime;
 }
-
+
 /*
  * ncp_compl-special_cases is to be used only to complement unate functions
  * when the number of literals in the complement are to be restricted to
@@ -606,7 +606,7 @@ int max_lit;
     }
 
 }
-
+
 /* 
  * nc_super_gasp
  */
@@ -625,7 +625,7 @@ cost_t *cost;
     EXECUTE(F = irredundant(G, D), IRRED_TIME, F, *cost);
     return F;
 }
-
+
 /*
  *  nc_all_primes -- foreach cube in F, generate all of the primes
  *  which cover the cube.
@@ -663,7 +663,7 @@ pcover F;
 
     return Fall_primes;
 }
-
+
 /*
  * Similar to make_sparse except that the complete off_set is
  * not used.
@@ -691,7 +691,7 @@ pcover F, D;
 
     return F;
 }
-
+
 /*
  *  nc_expand_gasp -- similar to expand_gasp except complete
  *  off set is not used.
@@ -720,7 +720,7 @@ IN pcover Foriginal;
     G = ncp_expand(G, (pcover)NULL, /*nonsparse*/ FALSE);/* Make them prime ! */
     return G;
 }
-
+
 /*
  *  nc_expand1_gasp -- similar to expand1_gasp
  *
@@ -808,7 +808,7 @@ pcover *G;
     }
 
 }
-
+
 /*
  * nc_last_gasp
  */
@@ -826,7 +826,7 @@ cost_t *cost;
     EXECUTE(F = irred_gasp(F, D, G1), GIRRED_TIME, F, *cost);
     return F;
 }
-
+
 /*
  *  nc_reduce_gasp -- compute the maximal reduction of each cube of F
  *
@@ -869,7 +869,7 @@ pcover F, D;
     free_cubelist(FD);
     return G;
 }
-
+
 /*
  * This is similar to reduce, except that it returns pre-reduced
  * cubes in Fold in the same order that the reduced cubes are returned
@@ -950,7 +950,7 @@ IN pcover D;
     return F;
 
 }
-
+
 /*
  * Similar to random_order except that it changes the order of cubes in
  * Fold so that the ith cube in Fold is the ith cube in F before reduce.
@@ -990,7 +990,7 @@ register pcover F, Fold;
     set_free(temp);
     return F;
 }
-
+
 /*
  * The cubes in F1 are permuted in T1 (e.g the first cube in F1 may
  * be in T1[5]).  This subroutine returns a cover G that has the cubes
@@ -1023,7 +1023,7 @@ pcover F2;
     return(G);
 
 }
-
+
 /* 
  * nc_mini_sort -- sort cubes according to the heuristics of mini
  * Put cube in G in the same order as the new order for the cubes
@@ -1061,7 +1061,7 @@ int (*compare)();
 
     return F_sorted;
 }
-
+
 /*
  * nc_reduce_cube -- find the maximal reduction of a cube
  */
@@ -1109,7 +1109,7 @@ IN int level;
 	(void) printf("SCCC[%d]: result is %s\n", --sccc_level, pc1(r));
     return r;
 }
-
+
 /*
  *   nc_sccc_special_cases -- check the special cases for sccc
  */
@@ -1200,7 +1200,7 @@ IN int level;
     /* Not much we can do about it */
     return MAYBE;
 }
-
+
 /*
  * ncp_expand -- similar to nc_expand but uses ncp_expand1 instead of
  * expand1
@@ -1300,7 +1300,7 @@ IN bool nonsparse;              /* expand non-sparse variables only */
 
     return F;
 }
-
+
 /*
  *  ncp_expand1 -- Similar to expand1 except that when there are no
  *  more feasible cubes, it goes to mincov even if there are some
@@ -1362,7 +1362,7 @@ pcube c;			/* The cube to be expanded */
     /* Raise any remaining free coordinates */
     (void) set_or(RAISE, RAISE, FREESET);
 }
-
+
 /*
  *  nc_first_expand -- expand each nonprime cube of F into a prime implicant
  *  
@@ -1498,7 +1498,7 @@ IN bool nonsparse;              /* expand non-sparse variables only */
 
     return F;
 }
-
+
 /*
  * Remove the cubes from T that wont affect the cube p being reduced.
  * These are the cubes that have atleast two variables in which T is

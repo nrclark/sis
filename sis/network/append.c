@@ -135,7 +135,7 @@ node_t *node;
 
     return util_strsav(new_name);
 }
-
+
 static int
 add_node_by_name(network1, node2)
 network_t *network1;

@@ -66,7 +66,7 @@ register char *word;
     word[i++] = '\0';
     return word;
 }
-
+
 /*
  *  Yes, I know this routine is a mess
  */
@@ -220,7 +220,7 @@ bad_char:
     (void) fprintf(stderr, "(warning): input line #%d ignored\n", lineno);
     skip_line(fp, stdout, TRUE);
     return;
-}
+}
 void parse_pla(fp, PLA)
 IN FILE *fp;
 INOUT pPLA PLA;
@@ -466,7 +466,7 @@ fatal("num_binary_vars (second field of .mv) cannot be negative");
 	    read_cube(fp, PLA);
     }
     goto loop;
-}
+}
 /*
     read_pla -- read a PLA from a file
 
@@ -607,7 +607,7 @@ EXECUTE(PLA->R=complement(cube2list(PLA->F,PLA->D)), COMPL_TIME, PLA->R, cost);
 
     return 1;
 }
-
+
 void PLA_summary(PLA)
 pPLA PLA;
 {

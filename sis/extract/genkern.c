@@ -79,7 +79,7 @@ char *state_p;
 
     return (*state->user_func)(kernel, cokernel, state->user_state);
 }
-
+
 void
 ex_subkernel_gen(node, func, level, state)
 node_t *node;

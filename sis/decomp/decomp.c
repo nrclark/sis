@@ -45,7 +45,7 @@ node_t *f;
 	array_free(fa);
     }
 }
-
+
 void
 decomp_good_network(network)
 network_t *network;
@@ -80,7 +80,7 @@ node_t *f;
 	array_free(fa);
     }
 }
-
+
 void
 decomp_disj_network(network)
 network_t *network;
@@ -115,7 +115,7 @@ node_t *f;
 	array_free(fa);
     }
 }
-
+
 array_t *
 decomp_quick(f)
 node_t *f;

@@ -280,7 +280,7 @@ network_t *network;
     clock_set_current_setting(network, SPECIFICATION);
     clock_set_cycletime(network, CLOCK_NOT_SET);
 }
-
+
 /*
  * If edge2 depends on edge1 return TRUE
  */

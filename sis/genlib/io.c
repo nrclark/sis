@@ -88,7 +88,7 @@ int s_max, p_max;
 	(void) printf("\n");
     }
 }
-
+
 int
 gl_num_leafs(tree)
 tree_node_t *tree;
@@ -129,7 +129,7 @@ int level, s, p, invert_output;
     }
     FREE(list);
 }
-
+
 void
 gl_print_all_gates(level, s, p)
 int level, s, p;
@@ -200,7 +200,7 @@ int use_nor_gate, invert_output;
     }
     FREE(list);
 }
-
+
 int 
 gl_number_of_nand_forms(level, s, p)
 {
@@ -226,7 +226,7 @@ gl_number_of_nand_forms(level, s, p)
     FREE(list);
     return count;
 }
-
+
 void
 gl_print_nand_forms(string, use_nor_gate)
 char *string;

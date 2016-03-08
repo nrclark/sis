@@ -70,7 +70,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 init_resub()
 {
     (void) com_add_command("resub", com_resub, 1);

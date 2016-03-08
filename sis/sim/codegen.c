@@ -135,7 +135,7 @@ char *root;
     FREE(outmap);
     return 1;
 }
-
+
 static void
 sim_gen_code(fp, network, func_name)
 FILE *fp;

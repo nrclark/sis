@@ -66,7 +66,7 @@ char **argv;
     array_free(nodevec);
     return 0;
 }
-
+
 int
 com_tdecomp(network, argc, argv)
 network_t **network;
@@ -110,7 +110,7 @@ char **argv;
 
     return 0;
 }
-
+
 init_decomp()
 {
     com_add_command("decomp", com_decomp, 1);

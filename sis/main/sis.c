@@ -156,7 +156,7 @@ char *s;
 	return 0;
     }
 }
-
+
 main(argc, argv)
 int argc;
 char **argv;

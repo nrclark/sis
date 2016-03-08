@@ -69,7 +69,7 @@ char **argv;
     assert(! avl_insert(alias_table, alias->name, (char *) alias));
     return 0;
 }
-
+
 /* ARGSUSED */
 com_unalias(network, argc, argv)
 network_t **network;
@@ -92,7 +92,7 @@ char **argv;
     }
     return 0;
 }
-
+
 void
 com_free_argv(argc, argv)
 int argc;

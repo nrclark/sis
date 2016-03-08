@@ -35,7 +35,7 @@ int ULM_INPUT_SIZE;
 array_t	*solution_array;  /* matrix with the selected columns */
 
 
-
+
 
 void
 print_suppressed_node()
@@ -66,7 +66,7 @@ print_suppressed_node()
 }
 
 
-
+
 /*
  *  construct_maxflow_network()
  *	Construct a network for maxflow problem to get s-t connectivity
@@ -141,7 +141,7 @@ construct_maxflow_network()
 
 
 
-
+
 /*
  *  form_suppress_matrix()
  *	Form a sparse matrix which represents a relationship between separating
@@ -174,7 +174,7 @@ array_t		*sepset_array;
 
 
 
-
+
 /*
  *  squeeze_matching()
  *	Generate one matching which has the sink node as an output
@@ -222,7 +222,7 @@ sm_row	*row;
 
 
 
-
+
 /*
  *  initialize_edge_capacity()
  *	Initialize the capacity of edges
@@ -248,7 +248,7 @@ initialize_edge_capacity()
 }
 
 
-
+
 /*
  *  generate_matching()
  *	Generate (all) matching(s) which has the sink node as an output
@@ -364,7 +364,7 @@ for (;;) {
 }
 
 
-
+
 /*
  *  DFS_covered_node()
  *	DFS to get all the intermediate nodes covered by the matching
@@ -404,7 +404,7 @@ int		*flag;		/* array of flags, if ON, threaded by DFS */
 
 
 
-
+
 /*
  *  form_binate_matrix()
  *	Form a sparse matrix for binate covering problem
@@ -538,7 +538,7 @@ int *pbasic_num_rows;
 }
 
 
-
+
 /*
  *  partial_collapse_node()
  *	Collapse the given node until it reaches the separating set
@@ -606,7 +606,7 @@ array_t		*sepset_node_array;
 
 
 
-
+
 /*
  *  partial_collapse()
  *	Collapse some of the network and reorganize it according to the result
@@ -706,7 +706,7 @@ array_t		*sepset_array;	/* array of pointers to arrays of separating
 
 
 
-
+
 /*
  extern void partition_network();
  *  partition_network()

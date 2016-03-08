@@ -82,7 +82,7 @@ int and_limit, or_limit;
 
     (void) network_sweep(network);
 }
-
+
 static void
 decomp_and_or(network, f)
 network_t *network;
@@ -157,7 +157,7 @@ balanced_tree(node_num_fanin(f), and_limit, node_and, &root, &nodes, &leaves);
     array_free(nodes);
     array_free(leaves);
 }
-
+
 static void
 decomp_or(network, f, or_limit)
 network_t *network;
@@ -207,7 +207,7 @@ balanced_tree(node_num_fanin(f), or_limit, node_or, &root, &nodes, &leaves);
     array_free(nodes);
     array_free(leaves);
 }
-
+
 static void
 balanced_tree(n, m, node_func, root, nodes, leaves)
 int n;		    		/* number of leaves */

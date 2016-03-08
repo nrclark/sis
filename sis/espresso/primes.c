@@ -38,7 +38,7 @@ pcube *T;			/* T will be disposed of */
 
     return Tnew;
 }
-
+
 static bool 
 primes_consensus_special_cases(T, Tnew)
 pcube *T;			/* will be disposed if answer is determined */
@@ -113,7 +113,7 @@ pcover *Tnew;			/* returned only if answer determined */
 	return MAYBE;
     }
 }
-
+
 static pcover 
 primes_consensus_merge(Tl, Tr, cl, cr)
 pcover Tl, Tr;

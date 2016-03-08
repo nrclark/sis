@@ -111,7 +111,7 @@ void xsis_intr_child ()
 	xsis_perror("kill");
     }
 }
-
+
 static int open_pty_pair (master,slave)
 int* master;
 int* slave;
@@ -205,7 +205,7 @@ int fildes;
     }
     return icanon_disabled;
 }
-
+
 int main (argc,argv)
 int argc;
 char **argv;

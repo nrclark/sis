@@ -296,7 +296,7 @@ sp_clp_t *rec;
     FREE(rec->name);
     FREE(rec);
 }
-
+
 /*
  * Returns true if the fanout of this node is a primary output
  */
@@ -380,7 +380,7 @@ node_t *node, *new_fanin;
     }
     FREE(fo_array);
 }
-
+
 /*
  * Routine to create the global representation for the technology-indep
  * restructuring procedures
@@ -535,7 +535,7 @@ int n;
     ti_model = array_fetch(sp_xform_t *, array_of_methods, n);
     return ti_model;
 }
-
+
  /* Must be called when you are sure that the name corresponds to an edge
     in the original network */
 void
@@ -1041,7 +1041,7 @@ st_table *clp_table;
     }
     st_free_table(clp_table);
 }
-
+
  /* 
   * Get the input_load_limit based on the load increase that can be
   * tolerated along the connection between "fanin" and "node"
@@ -1378,7 +1378,7 @@ speed_global_t *speed_param;
     }
     array_free(po_array);
 }
-
+
 /*
  * routines that do the different optimizations that are required by
  * the technology-independent models
@@ -1898,7 +1898,7 @@ speed_global_t *speed_param;
 
     return new_net;
 }
-
+
 /*
  * Use this routine if the delay information is stored in the node->delay field
  */

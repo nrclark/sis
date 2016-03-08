@@ -69,7 +69,7 @@ pnc_node pNode;
 	ROS_time += ptime() - t;
     }
 }
-
+
 /*
  * Get reduced offset for the ith cube in F, combine it with as many other
  * cubes as possible.
@@ -144,7 +144,7 @@ pcover F, Fold;
     return(ROS);
 
 }
-
+
 /*
  * Initialize parameters used by ROS related subroutines.
  * Most of these variables are declared in minimize.h
@@ -222,7 +222,7 @@ int rosZeros;
     }
 
 }
-
+
 /*
  * find_correct_ROS -- Find a ROS that is usable to expand p.
  * If such a ROS is found, set ROS to it and ROS_cube to its cube.
@@ -256,7 +256,7 @@ pcube p;
     return(FALSE);
 
 }
-
+
 /*
  * store_ROS -- store current ROS in ROS_array.
  */
@@ -296,7 +296,7 @@ store_ROS()
     pros_h->count = 1;
 
 }
-
+
 /*
  * Free all the stuff in ROS_array.
  */
@@ -335,7 +335,7 @@ close_ROS()
     FREE(ROS_array);
 
 }
-
+
 /*
  * Find the overexpanded cube of cube p.
  *
@@ -432,7 +432,7 @@ int level;		/* Level in the unate tree */
     }
 
 }
-
+
 /*
  * Special cases for finding overexpanded cube.
  */
@@ -520,7 +520,7 @@ int level;		/* Level in the unate tree */
     return(FALSE);
 
 }
-
+
 /*
  * Generate the blocking matrix for cube p.
  *
@@ -683,7 +683,7 @@ int level;
     }
 
 }
-
+
 /*
  * Special cases for setting up blocking matrix (reduced offset)
  * This routine uses global variable Num_act_vars declared in 
@@ -763,7 +763,7 @@ int level;
     return(FALSE);
 
 }
-
+
 /*
  * Find the overexpanded cube of cube p.
  *
@@ -829,7 +829,7 @@ int level;		/* Level from the root of the tree */
 	}
     }
 }
-
+
 /*
  * Special cases for finding overexpanded cube.
  */
@@ -933,7 +933,7 @@ int level;		/* Level from the root of the tree */
 
     return(FALSE);
 }
-
+
 /*
  * Generate the blocking matrix for cube p.
  *
@@ -1030,7 +1030,7 @@ int level;
     }
 
 }
-
+
 /*
  * Special cases for setting up blocking matrix (reduced offset)
  * This routine uses global variable Num_act_vars declared in 
@@ -1126,7 +1126,7 @@ int level;
     return(FALSE);
 
 }
-
+
 /*
  * Get the overexpanded cube.
  * 
@@ -1176,7 +1176,7 @@ pcube p, overexpanded_cube, old_cube;
     }
 
 }
-
+
 /*
  * Partition the cubelist in two parts such that no-nonunate variables are
  * shared. If such a partition exist, find reduced offset for each part
@@ -1270,7 +1270,7 @@ pcover *R;
     return(TRUE);
 
 }
-
+
 /*
  * multiply2_sf -- multiply two set families. Return the result.
  * Assume that no cube in one set family is orthagonal to any one in
@@ -1422,7 +1422,7 @@ unsigned int comp_debug;
 
     return numcube - count;
 }
-
+
 /*
  * This routine recursively generates unate cofactors of T.
  * The cofactors are stored at the leafs.
@@ -1514,7 +1514,7 @@ int level;
     return;
 
 }
-
+
 /* 
  * nc_compl_cube -- return the complement of a single cube (De Morgan's law)
  */
@@ -1542,7 +1542,7 @@ register pcube p;
     }
     return R;
 }
-
+
 /*
  * Free the unate tree.
  */
@@ -1577,7 +1577,7 @@ pnc_node pNode;
     FREE(pNode);
 
 }
-
+
 /*
  * Cofactor the given cubelist T with respect to the binary
  * variable var.
@@ -1678,7 +1678,7 @@ int var;
     free_cube(temp);
 
 }
-
+
 /*
  * Make cofactor T minimum w.r.t single cube containment
  */
@@ -1717,7 +1717,7 @@ INOUT pcube *T;
     }
 
 }
-
+
 /*
  * Find if the cube p and q are distance zero away from each other
  * in variable var. If so return some non-zero integer, otherwise,
@@ -1747,7 +1747,7 @@ int var;
     return(FALSE);
 
 }
-
+
 /*
  * Remove the cubes from T that don't contain the cube p. p is the node
  * to be expanded. All cubes in the unate leafs of the cofactors of T
@@ -1851,7 +1851,7 @@ pcube *T;
     free_cube(temp1);
 
 }
-
+
 /*
  * Form or of all the cubes that will not be removed by nc_rem_unnec
  * while expanding c.
@@ -1886,7 +1886,7 @@ pcube c, *T, orred_cube;
     if (empty)
 	(void) set_copy(orred_cube, cube.fullset);
 }
-
+
 /*
  * Find if there is a cube in T that will not be removed by nc_copy_unnec
  * while expanding c. If so, return TRUE, else return FALSE.
@@ -1913,7 +1913,7 @@ pcube c, *T;
     return(FALSE);
 
 }
-
+
 /*
  * Multiply a set_family by a single variable cube.
  */
@@ -1942,7 +1942,7 @@ int var;
     free_cube(temp);
 
 }
-
+
 /*
  * Remove all the cubes from T that don't contain p.
  */
@@ -1988,7 +1988,7 @@ pcube p, *T;
     free_cube(temp);
 
 }
-
+
 /*
  * nc_compl_special_cases is to be called only when the cubelist
  * T is known to have only one cube or is known to be unate.
@@ -2062,7 +2062,7 @@ pcover *Tbar;			/* returned only if answer determined */
     }
 
 }
-
+
 /*
  * Copy cubelist T. Return the copy.
  */
@@ -2092,7 +2092,7 @@ pcube *T;
     Tc_save[1] = (pcube) Tc;                    /* save pointer to last */
     return Tc_save;
 }
-
+
 /*
  * Assign memory to temporary cubes to be used in subroutines in
  * this file.
@@ -2111,7 +2111,7 @@ int num;
     for (i=0; i<num; i++)
 	nc_tmp_cube[i] = new_cube();
 }
-
+
 /*
  * Free memory assigned to the temporary cubes to be used in subroutines
  * in this file.

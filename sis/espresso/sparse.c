@@ -41,7 +41,7 @@ pcover F, D, R;
 
     return F;
 }
-
+
 /*
     mv_reduce -- perform an "optimal" reduction of the variables which
     we desire to be sparse

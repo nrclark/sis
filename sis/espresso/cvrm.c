@@ -113,7 +113,7 @@ IN int start;
 {
     return unravel_range(B, start, cube.num_vars-1);
 }
-
+
 /* lex_sort -- sort cubes in a standard lexical fashion */
 pcover lex_sort(T)
 pcover T;
@@ -221,7 +221,7 @@ register pcover F;
     set_free(temp);
     return F;
 }
-
+
 /*
  *  cubelist_partition -- take a cubelist T and see if it has any components;
  *  if so, return cubelist's of the two partitions A and B; the return value
@@ -302,7 +302,7 @@ unsigned int comp_debug;
 
     return numcube - count;
 }
-
+
 /*
  *  quick cofactor against a single output function
  */
@@ -397,7 +397,7 @@ int (*func1)();
 
     }
 }
-
+
 static pcover Fmin;
 static pcube phase;
 

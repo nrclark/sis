@@ -132,7 +132,7 @@ st_table *level_table;
     SIM_FLAG(f)->accept = accept;
     SIM_FLAG(f)->dctype = dctype;
 }
-
+
 static void
 simp_accept(f, newf, accept)
 node_t *f, *newf;
@@ -187,7 +187,7 @@ sim_accept_t accept;
     node_free(newf);
     }
 }
-
+
 void
 simplify_cspf_node(f, method, dctype, accept, filter, level_table, mg, leaves)
 node_t *f;
@@ -277,7 +277,7 @@ st_table *leaves;
     SIM_FLAG(f)->accept = accept;
     SIM_FLAG(f)->dctype = dctype;
 }
-
+
 static node_t *local_dc(f, mg, leaves, filter, level_table)
 node_t *f;
 bdd_manager *mg;

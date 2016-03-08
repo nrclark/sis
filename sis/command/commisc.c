@@ -40,7 +40,7 @@ usage:
     (void) fprintf(siserr, "usage: time\n");
     return 1;
 }
-
+
 /* ARGSUSED */
 com_usage(network, argc, argv)
 network_t **network;
@@ -55,7 +55,7 @@ char **argv;
     util_print_cpu_stats(sisout);
     return 0;
 }
-
+
 /* ARGSUSED */
 com_echo(network, argc, argv)
 network_t **network;
@@ -134,7 +134,7 @@ char **argv;
     FREE(file2);
     return 0;
 }
-
+
 /* ARGSUSED */
 com_which(network, argc, argv)
 network_t **network;
@@ -154,7 +154,7 @@ char **argv;
     FREE(filename);
     return 0;
 }
-
+
 /* ARGSUSED */
 com_best(network, argc, argv)
 network_t **network;
@@ -226,7 +226,7 @@ usage:
     }
     return(0);
 }
-
+
 int com_graphics_enabled ()
 {
     /*	Returns 1 if graphics commands are enabled.  Other packages should
@@ -291,7 +291,7 @@ void com_graphics_help ()
     }
     com_graphics_close (fp);
 }
-
+
 /* graphics_flag is the file descriptor for graphics commands, zero means
    graphics is disabled.  Other packages can call com_graphics_enabled to
    selectively add graphics commands. */

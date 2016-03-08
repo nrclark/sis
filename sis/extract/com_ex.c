@@ -112,7 +112,7 @@ usage:
     "    -t thres\tset threshold value for extraction\n");
     return 1;
 }
-
+
 static int
 com_kernel_extract(network, argc, argv)
 network_t **network;
@@ -233,7 +233,7 @@ usage:
     "    -t n\tset threshold value for extraction\n");
     return 1;
 }
-
+
 /* ARGSUSED */
 static int
 print_kernel(kernel, co_kernel, state)
@@ -303,7 +303,7 @@ usage:
     "    -s\t\tgenerate subkernels rather than kernels\n");
     return 1;
 }
-
+
 static int
 com_gdiv(network, argc, argv)
 network_t **network;
@@ -343,7 +343,7 @@ usage:
     (void) fprintf(siserr, "usage: %s n1 n2 ...\n", argv[0]);
     return 1;
 }
-
+
 init_extract()
 {
     com_add_command("gkx", com_kernel_extract, 1);

@@ -39,7 +39,7 @@
 */
 
 #include "espresso.h"
-
+
 /*
     expand -- expand each nonprime cube of F into a prime implicant
 
@@ -125,7 +125,7 @@ IN bool nonsparse;              /* expand non-sparse variables only */
     free_cube(OVEREXPANDED_CUBE);
     return F;
 }
-
+
 /*
     expand1 -- Expand a single cube against the OFF-set
 */
@@ -190,7 +190,7 @@ pcube c;			/* The cube to be expanded */
     /* Raise any remaining free coordinates */
     (void) set_or(RAISE, RAISE, FREESET);
 }
-
+
 /*
     essen_parts -- determine which parts are forced into the lowering
     set to insure that the cube be orthognal to the OFF-set.
@@ -244,7 +244,7 @@ exit_if: ;
     if (debug & EXPAND1)
 	printf("ESSEN_PARTS:\tRAISE=%s FREESET=%s\n", pc1(RAISE), pc2(FREESET));
 }
-
+
 /*
     essen_raising -- determine which parts may always be added to
     the raising set without restricting further expansions
@@ -272,7 +272,7 @@ pcube RAISE, FREESET;
 	printf("ESSEN_RAISING:\tRAISE=%s FREESET=%s\n",
 	    pc1(RAISE), pc2(FREESET));
 }
-
+
 /*
     elim_lowering -- after removing parts from FREESET, we can reduce the
     size of both BB and CC.
@@ -323,7 +323,7 @@ if(p[w]&r[w]&mask[w])goto nextvar;goto false;nextvar:;}}continue;false:
 	}
     }
 }
-
+
 /*
     most_frequent -- When all else fails, select a reasonable part to raise
     The active cubes of CC are the cubes which are covered by the
@@ -360,7 +360,7 @@ pcube FREESET;
 	printf("MOST_FREQUENT:\tbest=%d FREESET=%s\n", best_part, pc2(FREESET));
     return best_part;
 }
-
+
 /*
     setup_BB_CC -- set up the blocking and covering set families;
 
@@ -388,7 +388,7 @@ register pcover BB, CC;
 		SET(p, ACTIVE);
     }
 }
-
+
 /*
     select_feasible -- Determine if there are cubes which can be covered,
     and if so, raise those parts necessary to cover as many as possible.
@@ -504,7 +504,7 @@ loop:
     goto loop;
 /* NOTREACHED */
 }
-
+
 /*
     feasibly_covered -- determine if the cube c is feasibly covered
     (i.e., if it is possible to raise all of the necessary variables
@@ -542,7 +542,7 @@ w]&mask[w])goto nextvar;if(++dist>1)goto exit_if;nextvar:;}}
     }
     return TRUE;
 }
-
+
 /*
     mincov -- transform the problem of expanding a cube to a maximally-
     large prime implicant into the problem of selecting a minimum
@@ -617,7 +617,7 @@ heuristic_mincov:
     return;
 #endif
 }
-
+
 /*
     find_all_primes -- find all of the primes which cover the
     currently reduced BB

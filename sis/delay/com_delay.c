@@ -53,7 +53,7 @@ char **node1_p, **node2_p;
 	return 1;
     }
 }
-
+
 
 
 #define PRINT_VALUE(n) \
@@ -142,7 +142,7 @@ char **argv;
 }
 	   
    
-
+
 static int
 com_print_delay(network, argc, argv)
 network_t **network;
@@ -348,7 +348,7 @@ usage:
     (void) fprintf(siserr, "    -p n\tonly print top 'n' values\n");
     return 1;
 }
-
+
 enum parm_enum {ATIME, RTIME, LOAD, DRIVE, DEFAULT_RTIME, DEFAULT_ATIME,
 		    DEFAULT_LOAD, DEFAULT_DRIVE, DEFAULT_WIRE, MAX_INPUT_LOAD};
 #define INPUTS 1
@@ -527,7 +527,7 @@ char **argv;
   return 1;
 }
 
-
+
 init_delay()
 {
     com_add_command("print_delay", com_print_delay, /* changes-network */ 0);

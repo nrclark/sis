@@ -117,7 +117,7 @@ bool adjust_labels;
 	cube.sparse[cube.num_binary_vars + var] = 0;
     FREE(paired);
 }
-
+
 pcover pairvar(A, pair)
 pcover A;
 ppair pair;
@@ -185,7 +185,7 @@ bool paired[];
 	A = sf_delcol(A, first_run-offset, run_length);
     return A;
 }
-
+
 /*
     find_optimal_pairing -- find which binary variables should be paired
     to maximally reduce the number of terms
@@ -255,7 +255,7 @@ int strategy;
     set_pair(PLA);
     EXEC_S(PLA->F=espresso(PLA->F,PLA->D,PLA->R),"ESPRESSO  ",PLA->F);
 }
-
+
 int **find_pairing_cost(PLA, strategy)
 pPLA PLA;
 int strategy;
@@ -356,7 +356,7 @@ int strategy;
     PLA->pair = NULL;
     return cost_array;
 }
-
+
 static int best_cost;
 static int **cost_array;
 static ppair best_pair;
@@ -454,7 +454,7 @@ register ppair pair;
 	print_pair(pair);
     }
 }
-
+
 /*
     pair_all: brute-force approach to try all possible pairings
 
@@ -581,7 +581,7 @@ ppair pair;
     global_PLA->pair = NULL;
     global_PLA->phase = NULL;
 }
-
+
 generate_all_pairs(pair, n, candidate, action)
 ppair pair;
 int n;
@@ -635,7 +635,7 @@ int (*action)();
     pair_free(recur_pair);
     set_free(recur_candidate);
 }
-
+
 ppair pair_new(n)
 register int n;
 {

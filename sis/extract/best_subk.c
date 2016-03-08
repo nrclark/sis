@@ -19,7 +19,7 @@ struct best_subkernel_struct {
     sm_matrix *kernel_cube_matrix;
     int first_rect;
 };
-
+
 /*
  *  Helper function to sort through all prime rectangles in the kernel-
  *  cube matrix and return the rectangle with the best cost, where the cost
@@ -88,7 +88,7 @@ char *state_p;
 
     return 1;
 }
-
+
 /*
  *  find the BEST value rectangle in the kernel-cube matrix by generating
  *  all prime rectangles and choosing the best
@@ -148,7 +148,7 @@ char *state_p;
     st_free_table(fanout);
     return 1;
 }
-
+
 static rect_t * 
 best_subkernel(kernel_cube_matrix, row_cost, col_cost, func)
 sm_matrix *kernel_cube_matrix;
@@ -183,7 +183,7 @@ int (*func)();
     FREE(state);
     return rect;
 }
-
+
 rect_t *
 choose_subkernel(A, row_cost, col_cost, option)
 sm_matrix *A;

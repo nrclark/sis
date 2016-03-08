@@ -261,7 +261,7 @@ enum regexpcode
 		    followed by a byte which contains a syntax code, Sword or such like */
     notsyntaxspec /* Matches any character whose syntax differs from the specified. */
   };
-
+
 extern char *re_compile_pattern ();
 /* Is this really advertised? */
 extern void re_compile_fastmap ();

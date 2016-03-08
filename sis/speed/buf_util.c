@@ -19,7 +19,7 @@ static void sp_insert_buf_in_list();
 static double sp_inv_load;
 static delay_time_t sp_unit_fanout_block ={ 1.0, 1.0};
 
-
+
 /*
  * node daemon to allocate the storage with every node 
  */
@@ -43,7 +43,7 @@ node_t *node;
 }
 static delay_time_t sp_unit_fanout_drive ={ 0.2, 0.2};
 
-
+
 /*
  * get all the buffers and inverters from the library . If none is 
  * found then returns a dummy buffer with the delay characteristics of
@@ -160,7 +160,7 @@ double *p_min_req_diff;
     return 0;
 }
 
-
+
 void
 speed_dump_buffer_list(fp, buffer_list)
 FILE *fp;
@@ -212,7 +212,7 @@ lsGeneric item1, item2;
 
 
 }
-
+
 
 /*
  * Generates the array of buffers that we need to use  -- 
@@ -261,7 +261,7 @@ lib_gate_t *gate;
     inv_formals[0] = lib_gate_pin_name(gate, 0, 1);
     (void)lib_set_gate(node, gate, inv_formals ,inv_actuals, 1);
 }
-
+
 /*
  * Will take the gate implementing "node" and get the extreme gate
  * of that class and fix that as the implementation of "newnode". In the
@@ -500,7 +500,7 @@ lib_gate_t *gate, *pref_gate;
     FREE(formals);
     FREE(actuals);
 }
-
+
 
 /*
  * Determine the name of the implementation of the node ---
@@ -549,7 +549,7 @@ sp_buffer_t *buffer;
     }
     return name;
 }
-
+
 
 /*
  * Creates a buffer that is buffer "prev" followed by the gate "gate"
@@ -642,7 +642,7 @@ lsList list;
     (void)lsDestroy(list,(void(*)())0);
     (void)lsFinish(gen);
 }
-
+
 /*
  * If the node is implemented as a buffer then replace the node by the
  * gates that make up the buffer... Even thought there are more efficient
@@ -730,7 +730,7 @@ lib_gate_t *gate;
     FREE(formals);
     FREE(actuals);
 }
-
+
 /*
  * Some routines to allow the mapping to interface this package
  * We need a static variable here to store some information of the

@@ -78,7 +78,7 @@ node_t *nodep;
 
     return value;
 }
-
+
 typedef struct stat_struct {
     int index;
     int count;

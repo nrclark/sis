@@ -28,7 +28,7 @@
 #define NO_INLINE
 #define BPI 16
 #endif
-
+
 /*-----THIS USED TO BE set.h----- */
 
 /*
@@ -242,7 +242,7 @@ typedef struct set_family {
 /* Table for efficient bit counting */
 extern int bit_count[256];
 /*----- END OF set.h ----- */
-
+
 /* Define a boolean type */
 #define bool	int
 #define FALSE	0
@@ -414,7 +414,7 @@ typedef struct {
     {long t=ptime();fct;if(summary)print_trace(S,name,ptime()-t);}
 #define EXECUTE(fct,i,S,cost)\
     {long t=ptime();fct;totals(t,i,S,&(cost));}
-
+
 /*
  *    Global Variable Declarations
  */
@@ -507,7 +507,7 @@ extern struct cdata_struct cdata, temp_cdata_save;
 #define DISJOINT 0x5555
 #endif
 #endif
-
+
 /* function declarations */
 
 /* cofactor.c */	extern int binate_split_select();

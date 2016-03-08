@@ -145,7 +145,7 @@ usage:
     }
     return(1);
 }
-
+
 static int
 com_write(network, argc, argv)
 network_t **network;
@@ -511,7 +511,7 @@ int short_name;
 
     return io_name(node, short_name);
 }
-
+
 static int
 com_print(network, argc, argv)
 network_t **network;
@@ -616,7 +616,7 @@ usage:
     (void) fprintf(siserr, "usage: print [-d] [-n] n1 n2 ...\n");
     return 1;
 }
-
+
 /* ARGSUSED */
 com_print_stats(network, argc, argv)
 network_t **network;
@@ -735,7 +735,7 @@ usage:
     (void) fprintf(siserr, "print_stats [-d] [-f] [n1 n2 ...]\n");
     return(1);
 }
-
+
 static int
 com_print_io(network, argc, argv)
 network_t **network;
@@ -835,7 +835,7 @@ usage:
     (void) fprintf(siserr, "print_io [-d] [n1 n2 ...]\n");
     return(1);
 }
-
+
 /* ARGSUSED */
 static int
 com_chname(network, argc, argv)
@@ -858,7 +858,7 @@ char **argv;
     }
     return(0);
 }
-
+
 static int
 com_reset_name(network, argc, argv)
 network_t **network;
@@ -897,7 +897,7 @@ usage:
     (void) fprintf(siserr, "\t-l reset only long, made-up names\n");
     return(1);
 }
-
+
 /* ARGSUSED */
 static int
 com_print_altname(network, argc, argv)
@@ -922,7 +922,7 @@ char **argv;
     array_free(node_vec);
     return(0);
 }
-
+
 /* ARGSUSED */
 com_bdsyn(old_network, argc, argv)
 network_t **old_network;		/* never used ... */
@@ -975,7 +975,7 @@ char **argv;
 
     return(0);
 }
-
+
 
  /* 
   *----------------------------------------------------------------------
@@ -1068,7 +1068,7 @@ array_t *node_vec;
     }
     return 0;
 }
-
+
 
  /* 
   *----------------------------------------------------------------------
@@ -1125,7 +1125,7 @@ char **argv;
 }
 
 
-
+
 init_io()
 {
     com_add_command("bdsyn", com_bdsyn, 0);

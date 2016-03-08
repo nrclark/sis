@@ -197,7 +197,7 @@ usage:
     (void) fprintf(miserr, "usage: simulate [-s] [-i] in1 in2 in3 ...\n");
     return 1;
 }
-
+
 
 
 static int
@@ -433,7 +433,7 @@ usage:
 
 #endif
 
-
+
 static int
 com_sim_verify(network, argc, argv)
 network_t **network;
@@ -485,7 +485,7 @@ char **argv;
   (void) fprintf(miserr, "usage: sim_verify [-n n_patterns] network2.blif\n");
   return 1;
 }
-
+
 init_sim()
 {
     com_add_command("simulate", com_simulate, 0);

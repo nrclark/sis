@@ -362,7 +362,7 @@ node_t    *node;
     FREE(node->OBS);
 }
 
-
+
 /* compute maximum set of permissible functions for an edge.
  *
  */
@@ -471,7 +471,7 @@ int index;
 
 
 
-
+
 /* Makes the don't care computed for an edge compatible with a previous
  * edge. If the obs. don't care for current edge is D and for the previous
  * edge DP, and the Boolean variable at the node that previous edge
@@ -542,7 +542,7 @@ st_table *fofis_table; /* used for collapsing. */
     node_free(DC);
     return(ndc);
 }
-
+
 /* Returns the CSPF for a node if it exists.
  *
  */
@@ -563,7 +563,7 @@ bdd_manager *mg;
 
 
 
-
+
 /* A table of transitive fanouts of transitive fanins of a node.
  *
  */
@@ -710,7 +710,7 @@ char **obj2;
 
     return(0);
 }
-
+
 /*
  *
  */

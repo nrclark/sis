@@ -86,7 +86,7 @@ st_table *visited;
 	return 1;
     }
 }
-
+
 static void
 extract_path(visited)
 st_table *visited;

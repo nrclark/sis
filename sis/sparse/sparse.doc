@@ -66,7 +66,7 @@ struct sm_matrix_struct {
     sm_col *last_col;
     int ncols;				/* number of columns */
 };
-
+
 /*
  *  Useful macros to loop over all rows (or columns) in a matrix, and to
  *  loop over all elements in a row (or column).
@@ -88,7 +88,7 @@ struct sm_matrix_struct {
 #define sm_foreach_col_element(pcol, p)	\
         for(p = (pcol == 0) ? 0 : pcol->first_row; p != 0; p = p->next_row)
 
-
+
 sm_matrix *
 sm_alloc()
 	Allocates a new sparse matrix.  Initially it has no rows and no columns.
@@ -228,7 +228,7 @@ int
 sm_num_elements(A)
 sm_matrix *A;
 	Returns the number of nonzero elements in the matrix.
-
+
 sm_row *
 sm_row_alloc()
 	Allocates a new row vector.
@@ -309,7 +309,7 @@ sm_row_print(fp, row1)
 FILE *fp;
 sm_row *row1;
 	Print a row as a sparse vector -- useful for debugging.
-
+
 sm_column *
 sm_col_alloc()
 	Allocates a new column vector.
@@ -389,7 +389,7 @@ sm_col_print(fp, col)
 FILE *fp;
 sm_column *col;
 	Print a column as a sparse vector -- useful for debugging.
-
+
 int
 sm_block_partition(A, L, R)
 sm_matrix *A;

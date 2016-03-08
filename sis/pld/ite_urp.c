@@ -64,7 +64,7 @@ node_t *node;
 /* Free up the space*/
     sm_free_space(F);
 }
-
+
 
 
 /* Constructs the cover of the node. We use the sm package because we 
@@ -112,7 +112,7 @@ node_t *node;
     return F;
 }
 
-
+
 
 /* Recurse !! using Unate recursive paradigm(modified)*/
 static
@@ -227,7 +227,7 @@ node_t *node;
     return ite;
 	
 }
-
+
 
 /* Choose good variable for co-factoring*/
 static int   
@@ -309,7 +309,7 @@ int *ex;
     FREE(z);	
     return var; 
 }
-	
+	
 
     
 static int 
@@ -335,7 +335,7 @@ int *o, *z, size;
     }
     return var;
 }
-				
+				
 
 /* Divide matrix into 3 co-factored matrices - THENELSE is the matrix
    with cubes that have 2 in the b_col, THEN cubes have 1, ELSE have 0 */

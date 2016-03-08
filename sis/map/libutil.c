@@ -55,7 +55,7 @@ char *name;
     }
     return NIL(lib_gate_t);
 }
-
+
 /* for backward compatibility */
 lib_class_t *
 lib_get_class(network, library)
@@ -68,7 +68,7 @@ library_t *library;
   return lib_get_class_by_type(network, library);
 #endif
 }
-
+
 /*
  *  lib_class_t access functions
  */
@@ -103,7 +103,7 @@ lib_class_t *class;
 {
     return class->network;
 }
-
+
 /*
  *  lib_gate_t access functions
  */
@@ -180,7 +180,7 @@ lib_gate_t *gate;
     return network_num_po(gate->network);
 }
 
-
+
 /*
  *  misc functions 
  */
@@ -216,7 +216,7 @@ network_t *network;
   type = map_get_network_type(network);
   return (type == MAPPED_NETWORK) ? 1 : 0;
 }
-
+
 /*
  *  backwards compatibility
  */
@@ -253,7 +253,7 @@ node_t *node;
 {
     return lib_gate_area(lib_gate_of(node));
 }
-
+
 /*
  *  set the gate of a node -- assumes single-output gate
  */
@@ -367,7 +367,7 @@ int nin;
   return 1;
 #endif
 }
-
+
 void
 lib_free(library)
 library_t *library;
@@ -415,7 +415,7 @@ library_t *library;
     LS_ASSERT(lsDestroy(library->patterns, (void (*)()) 0));
     FREE(library);
 }
-
+
 void
 lib_dump(fp, library, detail)
 FILE *fp;

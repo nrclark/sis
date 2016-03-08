@@ -315,7 +315,7 @@ lib_gate_t *d_latch;
     } while (first < array_n(nodevec) );
     st_free_table(add_table );
 }
-
+
 /*
  * Generate the number of registers between the node
  * and its fanouts. Take care since primary outputs of the
@@ -469,7 +469,7 @@ network_t *network;
 	network_delete_node_gen(network, gen);
     }
 }
-
+
 /*
  * If use_mapped is set... then we need to get the appropriate dff from the
  * library and inset them. Furthermore for the original mapped latches
@@ -772,7 +772,7 @@ int use_mapped;
     return(network);
 }
 
-
+
 /*
  * Assures that the initial values are present on the edge.
  * If the initial values are presnt, no problem. Else the
@@ -1060,7 +1060,7 @@ int index;	/* index == -1 if there is no feedback pin on complex latch */
     FREE(formals);
 }
 
-
+
 /*
  * Generates an array of latches between "to" and "from" modes. The
  * number of such latches is "num" and the latches are arranged in

@@ -37,7 +37,7 @@ node_t *node;
 /*	node->fanin[i]->fanout_changed = 1;*/
     }
 }
-
+
 static void
 fanin_replace_single_fanout(node, i)
 node_t *node;
@@ -69,7 +69,7 @@ node_t *node;
 	fanin_replace_single_fanout(node, i);
     }
 }
-
+
 lsGen
 node_fanout_init_gen(node)
 node_t *node;
@@ -102,7 +102,7 @@ int *pin;
     if (pin != 0) *pin = fanout_rec->pin;
     return fanout_rec->fanout;
 }
-
+
 node_t *
 node_get_fanin(node, i)
 node_t *node;
@@ -176,7 +176,7 @@ node_t *node;
     }
     return lsLength(node->fanout);
 }
-
+
 int 
 node_patch_fanin(node, fanin, new_fanin)
 node_t *node;

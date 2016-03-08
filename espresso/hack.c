@@ -82,7 +82,7 @@ pPLA PLA;
     PLA->F = sf_delc(PLA->F, 2*var, 2*var+1);
     PLA->D = sf_delc(PLA->D, 2*var, 2*var+1);
 }
-
+
 map_output_symbolic(PLA)
 pPLA PLA;
 {
@@ -281,7 +281,7 @@ pcover *newF, *newD;
     free_cover(A);
 }
 #endif
-
+
 map_symbolic(PLA)
 pPLA PLA;
 {
@@ -462,7 +462,7 @@ int new_size, old_size, size_added;
     }
     FREE(oldlabel);
 }
-
+
 static pcover fsm_simplify(F)
 pcover F;
 {

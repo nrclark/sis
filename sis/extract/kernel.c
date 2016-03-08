@@ -61,7 +61,7 @@ sm_matrix *kernel_cube_matrix;
  */
 array_t *global_row_cost;
 array_t *global_col_cost;
-
+
 static value_cell_t **function_cubes;
 
 void 
@@ -145,7 +145,7 @@ kernel_extract_free()
     array_free(global_row_cost);
     array_free(global_col_cost);
 }
-
+
 static int 
 record_kernel(co_rect, rect, state)
 sm_matrix *co_rect;
@@ -179,7 +179,7 @@ char *state;
     }
     return 1;
 }
-
+
 /*
  *  sparse_kernel_extract
  *
@@ -265,7 +265,7 @@ sometimes for debugging thsi is better
 
     return total_value;
 }
-
+
 int
 ex_is_level0_kernel(A)
 sm_matrix *A;
@@ -320,7 +320,7 @@ rect_t *rect;
     }
     st_free_table(value_table);
 }
-
+
 /*
  *  overlapping kernel extraction
  */
@@ -393,7 +393,7 @@ int value_threshold, use_best_subkernel;
 
     return total_value;
 }
-
+
 static void
 overlapping_clear_rect(A, rect)
 sm_matrix *A;
@@ -409,7 +409,7 @@ rect_t *rect;
 	}
     }
 }
-
+
 static void
 dump_literal(fp, index)
 FILE *fp;
@@ -452,7 +452,7 @@ sm_matrix *fct;
 	first = 0;
     }
 }
-
+
 static void
 dump_kernel(fp, kernel)
 FILE *fp;
@@ -491,7 +491,7 @@ rect_t *rect;
     sm_free(func);
     sm_free(func1);
 }
-
+
 static void
 dump_kernel_table()
 {
@@ -532,7 +532,7 @@ dump_kernel_table()
     }
     (void) fprintf(sisout, "\n");
 }
-
+
 sm_matrix *
 ex_rect_to_kernel(rect)
 rect_t *rect;
