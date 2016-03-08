@@ -48,6 +48,7 @@ int size;
 }
 
 
+static int kernel_value();
 
 int
 split_node(network, node, size) 
@@ -55,7 +56,6 @@ network_t *network;
 node_t *node;
 int size;
 {
-    static int kernel_value();
     int i, value = 1;
     kern_node *sorted;
     divisor_t *div, *best_div;
