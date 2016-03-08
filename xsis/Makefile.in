@@ -162,7 +162,12 @@ xsis_SOURCES_local = NetPlot.c NetPlot.h NetPlotP.h main.c xastg.c \
     blif50.px ghost.px help50.px sis50.px
 
 AM_CPPFLAGS = -I../sis/include -I@SIS_X_INCLUDES@
+ifeq (x@SIS_X_LIBRARIES@,x)
+AM_LDFLAGS = 
+else
 AM_LDFLAGS = -L@SIS_X_LIBRARIES@
+endif
+
 LDADD = ../sis/libsis.a -lXaw -lXmu -lXt -lXext -lX11 -lm
 @SIS_COND_X_TRUE@xsis_SOURCES = $(xsis_SOURCES_local)
 @SIS_COND_X_TRUE@dist_man1_MANS = xsis.1
